@@ -1,15 +1,52 @@
-# Use the latest 2.1 version of CircleCI pipeline processing engine, see https://circleci.com/docs/2.0/configuration-reference/
 version: 2.1
 
-# Use a package of configuration called an orb, see https://circleci.com/docs/2.0/orb-intro/
 orbs:
-  # Declare a dependency on the welcome-orb
-  welcome: circleci/welcome-orb@0.3.1
-
-# Orchestrate or schedule a set of jobs, see https://circleci.com/docs/2.0/workflows/
-workflows:
-  # Name the workflow "Welcome"
-  Welcome:
-    # Run the welcome/run job in its own container
+  react:
     jobs:
-      - welcome/run
+      test:
+        working_directory: ~/HackMerced-V/client
+        docker:
+          - image: circleci/node:9
+        steps:
+          - checkout
+          - restore_cache: # special step to restore the dependency cache
+              key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+          - run:
+              name: Setup Dependencies
+              command: yarn install
+          - save_cache: # special step to save the dependency cache
+              key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+              paths:
+                - ./node_modules
+          - run: 
+              name: test
+              command: yarn test
+  node:
+    jobs:
+      test:
+        working_directory: ~/HackMerced-V/server
+        docker:
+          - image: circleci/node:9
+          - image: mongo:3.4.4
+        steps:
+          - checkout
+          - restore_cache:
+              key: dependency-cache-{{ checksum "package.json" }}
+          - run:
+              name: installation
+              command: yarn install
+          - save_cache:
+              key: dependency-cache-{{ checksum "package.json" }}
+              paths:
+                - ./node_modules
+          - run:
+              name: test
+              command: yarn test
+
+workflows:
+  React:
+    jobs:
+      - react/test
+  Node:
+    jobs:
+      - node/test
