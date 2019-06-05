@@ -1,49 +1,56 @@
-version: 2.1
+version: 2.0
 
 jobs:
-  react-test:
-    working_directory: ~/HackMerced-V/client
+  build:
+    working_directory: ~/HackMerced-V
     docker:
-      - image: circleci/node:9
+      - image: circleci/node:8
     steps:
       - checkout
-      # - restore_cache: # special step to restore the dependency cache
-      #     key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+      - restore_cache: # special step to restore the dependency cache
+          key: dependency-cache-{{ checksum "client/package.json" }}-{{ checksum "client/yarn.lock" }}
       - run:
           name: Setup React Dependencies
-          command: yarn install
-      # - save_cache: # special step to save the dependency cache
-      #     key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-      #     paths:
-      #       - ./node_modules
+          command: cd client && yarn install
+      - save_cache: # special step to save the dependency cache
+          key: dependency-cache-{{ checksum "client/package.json" }}-{{ checksum "client/yarn.lock" }}
+          paths:
+            - client/node_modules
       - run: 
           name: react test
-          command: yarn test
+          command: cd client && yarn test
+    requires:
+      - node-test
+    filters:
+      branches:
+        only: master
+        
   node-test:
-    working_directory: ~/HackMerced-V/server
+    working_directory: ~/HackMerced-V
     docker:
-      - image: circleci/node:9
+      - image: circleci/node:10
       - image: mongo:3.4.4
     steps:
       - checkout
-      # - restore_cache: # special step to restore the dependency cache
-      #     key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
+      - restore_cache: # special step to restore the dependency cache
+          key: dependency-cache-{{ checksum "server/package.json" }}-{{ checksum "server/yarn.lock" }}
       - run:
           name: Setup Node Dependencies
-          command: yarn install
-      # - save_cache: # special step to save the dependency cache
-      #     key: dependency-cache-{{ checksum "package.json" }}-{{ checksum "yarn.lock" }}
-      #     paths:
-      #       - ./node_modules
+          command: cd server && yarn install
+      - save_cache: # special step to save the dependency cache
+          key: dependency-cache-{{ checksum "server/package.json" }}-{{ checksum "server/yarn.lock" }}
+          paths:
+            - server/node_modules
       - run:
           name: node test
-          command: yarn test
+          command: cd server && yarn test
 
 workflows:
+  version: 2
   HackMerced:
     jobs:
       - node-test
-      - react-test:
+      - build:
           requires:
             - node-test
           filters:
