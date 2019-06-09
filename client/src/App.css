@@ -16,19 +16,23 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 .fa{
-    color: #fff;
+    /* font-awesome icon styling */
+    color: white;
     font-size: 35px !important;
     margin: 10px;
 }
 
 
 .credits{
+  /* copyright styling */
   font-size: 15px;
 }
 .App-footer {
+  /* entire footer styling */
+  color: white;
   background-color: #2a2834;
   min-height: 10vh;
   display: flex;
@@ -36,7 +40,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding-bottom: 10px;
+  
 }
 
 .App-link {
