@@ -14,13 +14,13 @@ function Footer() {
 			  	<a href="https://www.instagram.com/hackmerced/" style={{ color: '#0000' }}> {/* goes to HackMerced IG*/}
 			  		<i className="fa fa-instagram"></i> {/* instagram icon */}
 			  	</a>
-			  	<a href="https://slack.com" style={{ color: '#0000' }}> {/* we haven't created a HackMerced Slack so this is a temporary link */}
+			  	<a href="#" style={{ color: '#0000' }}> {/* we haven't created a HackMerced Slack so this is temporary */}
 			  		<i className="fa fa-slack"></i> {/* slack icon */}
 			  	</a>
 			  	<a href="https://github.com/HackMerced" style={{ color: '#0000' }}> {/* link to HackMerced github repo since we are opensource */}
 			  		<i className="fa fa-github"></i>
 			  	</a>
-			  	<a href="https://devpost.com" style={{ color: '#0000' }}> {/* we don't have a HackMerced V devpost link up yet so this is temporary */}
+			  	<a href="https://devpost.com/hackathons?utf8=%E2%9C%93&search=HackMerced&challenge_type=all&sort_by=Recently+Added" style={{ color: '#0000' }}> {/* we don't have a HackMerced V devpost link up yet so this is temporary */}
 			  		<i className="fa fa-code"></i> {/* Font Awesome didn't have a DevPost icon so this is closest thing */}
 			  	</a>
 		  	</div>
