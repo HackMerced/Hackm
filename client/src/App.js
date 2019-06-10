@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Footer from './component/Footer.js'; 
+import Footer from './component/Footer.jsx';
 import 'font-awesome/css/font-awesome.min.css'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         </a>
       </header>
       <Footer /> {/* Link to Footer.js */}
-    </div>  
+    </div>
   );
 }
 
