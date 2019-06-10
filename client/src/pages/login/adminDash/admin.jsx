@@ -5,7 +5,7 @@ function Admin() {
   return (
   	<div className="App-Admin" id="Admin">
 	  	<div className="container">
-		  	<div className="Admin">
+		  	<div className="admin">
 		  	<h1>Admin Dash</h1>
 		  	</div>
 

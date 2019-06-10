@@ -1,7 +1,7 @@
 import React from 'react';
 import './judging.css';
 
-function Login() {
+function Judging() {
   return (
   	<div className="App-judging" id="Judging">
 	  	<div className="container">

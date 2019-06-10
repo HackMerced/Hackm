@@ -6,7 +6,7 @@ function SignUp() {
   	<div className="App-sign-up" id="sign-up">
 	  	<div className="container">
 		  	<div className="signup">
-		  	<h1>This is the sign-up page</h1>
+		  	<h1>Sign Up</h1>
 		  	</div>
 
 	  	</div>

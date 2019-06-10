@@ -1,11 +1,11 @@
 import React from 'react';
 import './volDash.css';
 
-function Login() {
+function volDash() {
   return (
   	<div className="App-Vol" id="Vol-Dash">
 	  	<div className="container">
-		  	<div className="volDash">
+		  	<div className="volunteer">
 		  	<h1>Volunteer Dashboard</h1>
 		  	</div>
 

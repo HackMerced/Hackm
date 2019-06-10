@@ -1,6 +1,6 @@
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css'
-
+import './footer.css'
 function Footer() {
   return (
   	<div className="App-footer" id="Footer"> 
