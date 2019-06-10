@@ -6,7 +6,7 @@ function Login() {
   	<div className="App-login" id="Login">
 	  	<div className="container"> 
 		  	<div className="login">
-		  	<h1>Login</h1>
+		  	<h1>This is the login screen</h1>
 		  	</div>
 
 	  	</div>
