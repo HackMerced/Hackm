@@ -11,7 +11,7 @@ function Footer() {
 			  	<a href="https://www.facebook.com/hackmerced/" target="_blank" rel="noopener noreferrer" style={{ color: '#0000' }}> {/* goes to HackMerced fb */}
 			  		<i className="fa fa-facebook-square"></i> {/* fb icon */}
 			  	</a>
-			  	<a href="https://www.instagram.com/hackmerced/" style={{ color: '#0000' }}> {/* goes to HackMerced IG*/}
+			  	<a href="https://www.instagram.com/hackmerced/" style={{ color: '#white' }}> {/* goes to HackMerced IG*/}
 			  		<i className="fa fa-instagram"></i> {/* instagram icon */}
 			  	</a>
 			  	<a href="#" style={{ color: '#0000' }}> {/* we haven't created a HackMerced Slack so this is temporary */}
