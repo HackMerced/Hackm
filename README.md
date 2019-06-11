@@ -1,5 +1,5 @@
 # HackMerced V
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 [![CircleCI](https://circleci.com/gh/HackMerced/HackMerced-V.svg?style=svg)](https://circleci.com/gh/HackMerced/HackMerced-V)
 
 ## Contributors
@@ -8,33 +8,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-<table>
-  <tr>
-    <td align="center">
-      <a href="http://linkedin.com/in/adriandarian/">
-        <img src="https://avatars0.githubusercontent.com/u/23567187?v=4" width="100px;" alt="Adrian Darian"/>
-        <br />
-        <sub>
-          <b>Adrian Darian</b>
-        </sub>
-      </a>
-      <br />
-      <a href="#review-adriandarian" title="Reviewed Pull Requests">👀</a> 
-      <a href="#projectManagement-adriandarian" title="Project Management">📆</a>
-    </td>
-    <td align="center">
-      <a href="http://shivgupta.xyz">
-        <img src="https://avatars3.githubusercontent.com/u/15200155?v=4" width="100px;" alt="Shiv Gupta"/>
-        <br />
-        <sub>
-          <b>Shiv Gupta</b>
-        </sub>
-      </a>
-      <br />
-      <a href="https://github.com/HackMerced/HackMerced-V/commits?author=shiv248" title="Code">💻</a>
-    </td>
-  </tr>
-</table>
+<table><tr><td align="center"><a href="http://linkedin.com/in/adriandarian/"><img src="https://avatars0.githubusercontent.com/u/23567187?v=4" width="100px;" alt="Adrian Darian"/><br /><sub><b>Adrian Darian</b></sub></a><br /><a href="#review-adriandarian" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-adriandarian" title="Project Management">📆</a></td><td align="center"><a href="http://shivgupta.xyz"><img src="https://avatars3.githubusercontent.com/u/15200155?v=4" width="100px;" alt="Shiv Gupta"/><br /><sub><b>Shiv Gupta</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=shiv248" title="Code">💻</a></td><td align="center"><a href="https://github.com/AndrewCNg24"><img src="https://avatars3.githubusercontent.com/u/50030044?v=4" width="100px;" alt="Andrew Ng"/><br /><sub><b>Andrew Ng</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=AndrewCNg24" title="Code">💻</a></td></tr></table>
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
