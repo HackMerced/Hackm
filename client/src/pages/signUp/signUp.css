@@ -1,12 +1,12 @@
 .App-sign-up{
-    color: orange;
-    background-color: #282c34;
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     font-size: calc(10px + 2vmin);
-     text-align: center;
- }
+	color: orange;     /* sets color to orange */
+	background-color: #282c34;     /* sets bg same as main page */
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	text-align: center;
+}
 
