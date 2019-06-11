@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Footer from './component/Footer.js'; 
+import 'font-awesome/css/font-awesome.min.css'
 
 function App() {
   return (
@@ -19,7 +21,8 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+      <Footer /> {/* Link to Footer.js */}
+    </div>  
   );
 }
 
