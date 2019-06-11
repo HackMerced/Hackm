@@ -1,7 +1,7 @@
 import React from 'react'
 import logo from '../../logo.svg';
-import './home.css';
-function Home() {
+import './home.css'; //import css for this page
+function Home() {   {/* This page is the exact same page as the original example */}
   return (
     <div className="Home">
         <img src={logo} className="App-logo" alt="logo" />

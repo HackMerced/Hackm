@@ -1,6 +1,6 @@
 .applicant{
-   	color: green;
-    background-color: #282c34;
+   	color: green;   /* sets big word to green */
+    background-color: #282c34;    /* sets background same as main page */
     min-height: 100vh;
     display: flex;
     flex-direction: column;

@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';   //Router Library
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render((
-  <BrowserRouter>
+  <BrowserRouter>   {/* Added Route to main website */}
     <App />
   </BrowserRouter>
 ), document.getElementById('root'));
