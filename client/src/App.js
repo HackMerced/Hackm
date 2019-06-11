@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './component/Footer.js'; 
-import NavigationBar from './component/Navigation-Bar.js'; 
+import NavigationBar from './component/Navigation-Bar.jsx'; 
 import 'font-awesome/css/font-awesome.min.css'
 
 function App() {
