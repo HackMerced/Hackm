@@ -2,11 +2,13 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './component/Footer.js'; 
+import NavigationBar from './component/Navigation-Bar.js'; 
 import 'font-awesome/css/font-awesome.min.css'
 
 function App() {
   return (
     <div className="App">
+      <NavigationBar />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
