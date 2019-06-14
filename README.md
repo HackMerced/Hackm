@@ -1,7 +1,16 @@
-# HackMerced V
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
+<p align="center">
+ <!--<img src="https://raw.githubusercontent.com/HackMerced/HackMerced-V/master/logo.png" width="235">-->
+  <h1 align="center">HackMerced V</h1>
+</p>
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=plastic)](#contributors)
 [![CircleCI](https://circleci.com/gh/HackMerced/HackMerced-V.svg?style=svg)](https://circleci.com/gh/HackMerced/HackMerced-V)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2901/badge)](https://bestpractices.coreinfrastructure.org/projects/2901)
+![GitHub issues](https://img.shields.io/github/issues-raw/HackMerced/HackMerced-V.svg?style=plastic)
+![GitHub](https://img.shields.io/github/license/HackMerced/HackMerced-V.svg?style=plastic)
+<br/>
+[![Slack channel #HackMerced](https://img.shields.io/badge/slack-hackmerced-brightgreen.svg?logo=slack?style=plastic)](https://hackmerced2019.slack.com)
+[![Twitter](https://img.shields.io/badge/twitter-@hackmerced-blue.svg?style=plastic)](https://twitter.com/hackmerced)
 
 ## Contributors
 
