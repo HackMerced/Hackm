@@ -1,6 +1,7 @@
 # HackMerced V
 [![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 [![CircleCI](https://circleci.com/gh/HackMerced/HackMerced-V.svg?style=svg)](https://circleci.com/gh/HackMerced/HackMerced-V)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2901/badge)](https://bestpractices.coreinfrastructure.org/projects/2901)
 
 ## Contributors
 
