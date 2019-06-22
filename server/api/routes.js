@@ -3,6 +3,8 @@ const router = express.Router();
 
 router.post('/api/mailing/:id', async (req, res) => { };
 
+router.post('/api/mailing-list', async (req, res) => { };
+
 router.post('/api/hacker/:id', async (req, res) => { };
 
 router.post('/api/hackers', async (req, res) => { };
@@ -21,6 +23,8 @@ router.post('/api/sponsors', async (req, res) => { };
 
 
 router.get('/api/mailing/:id', async (req, res) => { };
+
+router.get('/api/mailing-list', async (req, res) => { };
 
 router.get('/api/hacker/:id', async (req, res) => { };
 
