@@ -1,0 +1,42 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "adriandarian",
+      "name": "Adrian Darian",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/23567187?v=4",
+      "profile": "http://linkedin.com/in/adriandarian/",
+      "contributions": [
+        "review",
+        "projectManagement"
+      ]
+    },
+    {
+      "login": "shiv248",
+      "name": "Shiv Gupta",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/15200155?v=4",
+      "profile": "http://shivgupta.xyz",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "AndrewCNg24",
+      "name": "Andrew Ng",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/50030044?v=4",
+      "profile": "https://github.com/AndrewCNg24",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "HackMerced-V",
+  "projectOwner": "HackMerced",
+  "repoType": "github",
+  "repoHost": "https://github.com"
+}
