@@ -1,12 +1,11 @@
 .volunteer{
-    color: green;   /* sets big word to green */
-    background-color: #282c34;    /* sets background same as main page */
-    min-height: 100vh;
+    color: green;
+    background-color: #282c34;
+    min-height: 100vh; /* puts a sectioned size */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: 45px;
     text-align: center;
 }
-

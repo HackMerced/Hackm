@@ -1,19 +1,15 @@
 import React from 'react';
 import './judging.css';
 
-function Judging() {
+const Judging = () => {
   return (
   	<div className="App-judging" id="Judging">   {/* This code basically puts "Judging Dash"*/}
-	  	<div className="container">				 {/* in the middle of the page */}
-		  	<div className="judging">
-		  	<h1>Judging Dash</h1>   {/* Big word "Judging Dash" */}
-		  	</div>
-
-	  	</div>
+	  	<section className="container">				 {/* in the middle of the page */}
+		  	<article className="judging">
+		  	<h1>Judging Dash</h1>  
+		  	</article>
+	  	</section>
   	</div>
   );
 }
 export default Judging;
-
-
-

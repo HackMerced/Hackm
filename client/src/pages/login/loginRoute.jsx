@@ -1,12 +1,12 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom' //adds Switch and Route libraries to this file
-import Login from './login/login.jsx' //links Login page
+import Login from './mainLogin/login.jsx' //links Login page
 import Admin from './adminDash/admin.jsx' //links Admin Dashboard
 import App from './applicantDash/applicant.jsx' //Links Applicants Dashboard
 import Judge from './judgingDash/judging.jsx' //Links Judges Dashboard
 import Vol from './volDash/volDash.jsx' //Links Volunteers Dashboard
 
-function LoginRoute() {
+const LoginRoute = () => {
     return (
         <Switch>
             <Route exact path = '/login' component = {Login}/>   {/* Login route as default localhost:3000/login */}

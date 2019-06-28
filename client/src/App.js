@@ -1,14 +1,13 @@
 import React from 'react';
-import Footer from './component/Footer.jsx';
-import Main from './component/Main.jsx'
+import Footer from './component//Footer/Footer.jsx';
+import Main from './component/Main/Main.jsx'
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <Main /> {/* Link to React Router */}
-      <Footer /> {/* Link to Footer.js */}
-    
-    </div>
+    <React.Fragment> 		{/* This allows children, and removal of unnecessary <div> wrapper */}
+      <Main /> 		{/* Link to React Router */}
+      <Footer />	{/* Link to Footer.js */}
+    </React.Fragment>
   );
 }
 

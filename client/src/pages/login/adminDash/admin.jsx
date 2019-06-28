@@ -1,15 +1,14 @@
 import React from 'react';
 import './admin.css';
 
-function Admin() {
+const Admin = () => {
   return (
-  	<div className="App-Admin" id="Admin">  {/* This code basically puts "Admin Dash"*/}
-	  	<div className="container">			{/* in the middle of the page */}
-		  	<div className="admin">
-		  	<h1>Admin Dash</h1>    {/* Big word "Admin Dash" */}
-		  	</div>
-
-	  	</div>
+  	<div className="App-Admin">  {/* This code basically puts "Admin Dash"*/}
+	  	<section className="container">			{/* in the middle of the page */}
+		  	<article className="admin">
+		  	<h1>Admin Dash</h1> 
+		  	</article>
+	  	</section>
   	</div>
   );
 }
