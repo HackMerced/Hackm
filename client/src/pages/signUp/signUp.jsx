@@ -1,18 +1,15 @@
 import React from 'react';
 import './signUp.css';   {/* css for this file */}
 
-function SignUp() {
+const SignUp = () => {
   return (
-  	<div className="App-sign-up" id="sign-up">   {/* this code just puts the words "Sign Up" */}
-	  	<div className="container">				 {/* in the middle of the page */}
-		  	<div className="signup">
-		  	<h1>Sign Up</h1>   {/* big text "Sign Up" */}
-		  	</div>
-	  	</div>
+  	<div className="App-sign-up">   {/* this code just puts the words "Sign Up" */}
+	  	<section className="container">				 {/* in the middle of the page */}
+		  	<article className="signup">
+		  	<h1>Sign Up</h1>
+		  	</article>
+	  	</section>
   	</div>
   );
 }
 export default SignUp;
-
-
-
