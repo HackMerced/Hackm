@@ -5,7 +5,7 @@ class NavigaionBar extends React.Component {
         return(
             <div className="App-navigation-bar" id="Navigation-Bar">
                 <div className="nav-container">
-                    <a href = "home-page" target="_blank">HACKMERCED</a>
+                    <a href = "/" target="_blank">HACKMERCED</a>
                         <i className="HackMerced icon"></i>{/*HackMerced icon*/}
 
                     <a href = "event-page" target="_blank">EVENT</a>
@@ -16,9 +16,9 @@ class NavigaionBar extends React.Component {
 
                     <a href = "faq-page" target="_blank">FAQ</a>
 
-                    <a href = "registration-page" target="_blank">REGISTRATION</a>
+                    <a href = "signup" target="_blank">REGISTRATION</a>
 
-                    <a href = "team-page" target="_blank">TEAM</a>
+                    <a href = "login" target="_blank">TEAM</a>
                         
                     <a href = "sponsors-page" target="_blank">SPONSORS</a>
 
