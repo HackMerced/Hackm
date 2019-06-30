@@ -25,7 +25,7 @@ const routes = [ 			// JSON array of objects having characteristics of respectiv
 },
 {
 	path: '/applicant',
-	component: volDash,
+	component: applicantDash,
 },
 {
 	path: '/judge',
@@ -33,7 +33,7 @@ const routes = [ 			// JSON array of objects having characteristics of respectiv
 },
 {
 	path: '/volunteer',
-	component: applicantDash,
+	component: volDash,
 }
 ];
 

@@ -5,7 +5,7 @@ import logo from './logo.png';
 /* This Nav bar is super rough its not nearly as close to the draft sketched by the design team */
 
 
-class NavagationBar extends React.Component {
+class NavigationBar extends React.Component {
     render() {
         return(
             <article className="App-nav" id="Navigation-Bar">
@@ -15,7 +15,7 @@ class NavagationBar extends React.Component {
                     </a>
                 </nav>
                 <nav className = "nav-link">
-                    <Link className= "style-link" to='/#event' title= "Events Page">Events</Link> {/* React Router link to Events on home page */}
+                    <Link className= "style-link" to='/event' title= "Events Page">Events</Link> {/* React Router link to Events on home page */}
                 </nav>
                 <nav className = "nav-link">
                     <Link className= "style-link" to='/#tracks' title= "Tracks">Tracks</Link> {/* I have no idea what "Tracks" is supposed to be */}
@@ -40,4 +40,4 @@ class NavagationBar extends React.Component {
     }
 }
 
-export default NavagationBar;
+export default NavigationBar;
