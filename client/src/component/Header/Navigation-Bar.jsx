@@ -5,7 +5,7 @@ import logo from './logo.png';
 /* This Nav bar is super rough its not nearly as close to the draft sketched by the design team */
 
 
-class NavagationBar extends React.Component {
+class NavigationBar extends React.Component {
     render() {
         return(
             <article className="App-nav" id="Navigation-Bar">
@@ -40,4 +40,4 @@ class NavagationBar extends React.Component {
     }
 }
 
-export default NavagationBar;
+export default NavigationBar;
