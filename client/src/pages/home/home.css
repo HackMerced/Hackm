@@ -8,7 +8,8 @@
 
 .Home {
     background-color: #282c34;
-    min-height: 100vh;
+    color: white;
+    min-height: 92vh;
     display: flex;
     flex-direction: column;
     align-items: center;
