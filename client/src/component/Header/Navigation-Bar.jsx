@@ -10,12 +10,12 @@ class NavigationBar extends React.Component {
         return(
             <article className="App-nav" id="Navigation-Bar">
                 <nav className = "nav-link">
-                    <a href = "/">
+                    <Link to='/' title= "Back Home!">
                         <img class="HackMerced-logo" src={logo} title= "HackMerced" alt="Hack Merced"/> {/* HackMerced icon goes to home page */}
-                    </a>
+                    </Link>
                 </nav>
                 <nav className = "nav-link">
-                    <Link className= "style-link" to='/event' title= "Events Page">Events</Link> {/* React Router link to Events on home page */}
+                    <Link className= "style-link" to='/events' title= "Events Page">Events</Link> {/* React Router link to Events on home page */}
                 </nav>
                 <nav className = "nav-link">
                     <Link className= "style-link" to='/#tracks' title= "Tracks">Tracks</Link> {/* I have no idea what "Tracks" is supposed to be */}
