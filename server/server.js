@@ -5,9 +5,9 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 
 const app = express();
-const port = process.env.port || 3000;
+const port = process.env.port || 3001;
 
-const api = require('./server/api/routes');
+//const api = require('./server/api/routes');
 
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -17,12 +17,12 @@ app.use(morgan('tiny'));
 
 
 
-if(process.env.ENVIORNMENT === 'development'){
-   // console.log("Hello, Testing?");
-}else if (process.env.ENVIORNMENT === 'production') {
-    app.use(express.static(path.resolve(__dirname, './client/build')));
+app.get('/', (req, res) => {
 
-}
+    console.log('index accessed');
+    res.send("It worked");
+  
+});
 
 
 
