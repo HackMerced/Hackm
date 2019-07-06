@@ -18,7 +18,7 @@ app.use(morgan('tiny'));
 
 
 if(process.env.ENVIORNMENT === 'development'){
-    console.log("Hello, Testing?");
+   // console.log("Hello, Testing?");
 }else if (process.env.ENVIORNMENT === 'production') {
     app.use(express.static(path.resolve(__dirname, './client/build')));
 
