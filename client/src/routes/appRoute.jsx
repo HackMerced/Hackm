@@ -5,6 +5,7 @@ import adminDash from '../pages/login/adminDash/admin.jsx'
 import applicantDash from '../pages/login/applicantDash/applicant.jsx'
 import judgingDash from '../pages/login/judgingDash/judging.jsx'
 import volDash from '../pages/login/volDash/volDash.jsx'
+import events from '../pages/events/Events.jsx'
 
 const routes = [ 			// JSON array of objects having characteristics of respective components and paths
 {				 			// This is how the app is pulling the routing data dynamically
@@ -25,15 +26,20 @@ const routes = [ 			// JSON array of objects having characteristics of respectiv
 },
 {
 	path: '/applicant',
-	component: volDash,
+	component: applicantDash,
 },
+{
+	path: '/events',
+	component: events,
+},
+
 {
 	path: '/judge',
 	component: judgingDash,
 },
 {
 	path: '/volunteer',
-	component: applicantDash,
+	component: volDash,
 }
 ];
 
