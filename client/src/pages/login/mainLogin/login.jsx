@@ -16,21 +16,21 @@ class Login extends React.Component {
 					  			<p>Email</p>
 					  		</section>
 
-					  		<input type="text" style={{width:200}} name="email"/>		{/* Email input box */}
+					  		<input type="text" style={{width:200}} name="email"></input>		{/* Email input box */}
 
 					  		<section className="pass">		{/* Password Section */}
 					  			<p>Password</p>
 					  		</section>
 
-					  		<input type="password" id="pass" style={{width:200}} name="password" minlength="8" required/>		{/* Hidden input Password */}
+					  		<input type="password" id="pass" style={{width:200}} name="password" minlength="8" required></input>		{/* Hidden input Password */}
 						</form>
 						 <br></br>
 						 <section  className="logged-In"> 		{/* Keep me Logged in */}
-							<input type="checkbox" name="logged-in?"/>Keep me logged in
+							<input type="checkbox" name="logged-in?"></input>Keep me logged in
 						</section>
 						<br></br>
 						<br></br>
-						<input type="submit" style={{width:210}} value="Lets Go!"/>		{/* Submit */}
+						<input type="submit" style={{width:210}} value="Lets Go!"></input>		{/* Submit */}
 			  			<br></br>
 			  			<br></br>
 			  		</main>
