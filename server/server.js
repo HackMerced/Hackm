@@ -9,13 +9,13 @@ const MongoClient = require('mongodb').MongoClient;
 const app = express();
 const port = process.env.port || 3001;
 
-//const api = require('./server/api/routes');
+const api = require('./api/routes');
 
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
-//app.use('/api', api);
+app.use('/', api);
 
 const client = new MongoClient(process.env.uri, { useNewUrlParser: true });
 client.connect(err => {
@@ -33,12 +33,8 @@ client.connect(err => {
 });
 
 app.get('/', (req, res) => {
-
-    
-
-    console.log('index accessed');
-    res.send("It worked");
-  
+  console.log('index accessed');
+  res.send('it worked');
 });
 
 
