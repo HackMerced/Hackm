@@ -28,7 +28,7 @@ router.get('/api/mailing-list', async (req, res) => { });
 
 router.get('/api/hacker/:id', async (req, res) => { });
 
-router.get('/api/hackers', async (req, res) => { });
+router.get('/api/hackers', async (req, res) => { res.send('hello') });
 
 router.get('/api/volunteer/:id', async (req, res) => { });
 
@@ -41,3 +41,5 @@ router.get('/api/mentors', async (req, res) => { });
 router.get('/api/sponsor/:id', async (req, res) => { });
 
 router.get('/api/sponsors', async (req, res) => { });
+
+module.exports = router;

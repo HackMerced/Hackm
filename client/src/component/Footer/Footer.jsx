@@ -1,10 +1,12 @@
 import React from 'react';
+import 'font-awesome/css/font-awesome.min.css'
+import './footer.css'
 
-function Footer() {
+const Footer = () => {
   return (
-  	<div className="App-footer" id="Footer"> 
-	  	<div className="container"> {/* container with social icon and ownership */}
-		  	<div className="social"> {/* social icon section */}
+  	<article className="App-footer" id="Footer"> 
+	  	<section className="container"> {/* container with social icon and ownership */}
+		  	<nav className="social"> {/* social icon section */}
 			  	<a href="mailto:general@hackmerced.com?subject=HackMerced Questions&amp;body=Dear HackMerced," style={{ color: '#0000' }}> {/* mail to hackmerced email */}
 			  		<i className="fa fa-envelope"></i> {/* email icon */}
 			  	</a>
@@ -23,12 +25,10 @@ function Footer() {
 			  	<a href="https://devpost.com/hackathons?utf8=%E2%9C%93&search=HackMerced&challenge_type=all&sort_by=Recently+Added" style={{ color: '#0000' }}> {/* we don't have a HackMerced V devpost link up yet so this is temporary */}
 			  		<i className="fa fa-code"></i> {/* Font Awesome didn't have a DevPost icon so this is closest thing */}
 			  	</a>
-		  	</div>
-		  	<div className="credits"> <span className="copyright">© 2020 HackMerced. All Rights Reserved.</span></div> {/* Copyright for HackMerced */}
-	  	</div>
-  	</div>
+		  	</nav>
+		  	</section>
+		  	<section className="credits"> <span className="copyright">© 2020 HackMerced. All Rights Reserved.</span></section> {/* Copyright for HackMerced */}
+  	</article>
   );
 }
-// export the Footer
 export default Footer;
-
