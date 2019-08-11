@@ -81,7 +81,7 @@ class SignUpHacker extends Component {
     </div>
     {/* College Year */}
     <div>
-        <label>Year In Colleg</label>
+        <label>Year In College</label>
         <input type="text" name="CollegeYear" ref="name" placeholder="1st..."></input>
     </div>
     {/* T-Shirt Size */}
