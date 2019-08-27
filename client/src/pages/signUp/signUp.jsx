@@ -25,8 +25,8 @@ class SignUp extends React.Component {
             LinkedIn: '',
             Devpost: '',
         };
-        this.handleInputChange = this.handleInputChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        // this.handleInputChange = this.handleInputChange.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
     }
 	render() {
 		return ( 
@@ -47,7 +47,7 @@ class SignUp extends React.Component {
 					{/* Email */}
 					<div>
 						<label>Email</label><label style={{color:"#ff0000"}}>*</label>
-						<input type="email" name="myEmail" ref="name" placeholder="something@example.com"></input>
+						<input type="email" name="myEmail" ref="name" placeholder="name@example.com"></input>
 					</div>
 
 					{/* Phone Number */}
@@ -65,7 +65,7 @@ class SignUp extends React.Component {
 					{/* High School */}
 					<div>
 						<label>High School</label>
-						<input type="text" name="HighSchool" ref="name" placeholder="Something High School"></input>
+						<input type="text" name="HighSchool" ref="name" placeholder="High School"></input>
 					</div>
 
 					{/* Birthday npm install react-datepicker --save*/}
@@ -77,13 +77,29 @@ class SignUp extends React.Component {
 					{/* Gender */}
 					<div>
 						<label>Gender</label><label style={{color:"#ff0000"}}>*</label>
-						<input type="text" name="Gender" ref="name" placeholder="Male/Female/Other"></input>
+						{/* <input type="text" name="Gender" ref="name" placeholder="Male/Female/Other"></input> */}
+						<select>
+							<option value ="Male">Male</option>
+							<option value ="Female">Female</option>
+							<option value ="Other">Other</option>
+							<option value ="Prefer Not To Answer">Prefer not to Answer</option>
+						</select>
 					</div>
 
 					{/* Race/Ethnicity */}
 					<div>
 						<label>Race/Ethnicity</label><label style={{color:"#ff0000"}}>*</label>
-						<input type="text" name="Ethnicity" ref="name" placeholder="Race"></input>
+						{/* <input type="text" name="Ethnicity" ref="name" placeholder="Race"></input> */}
+						
+						<select>
+							<option value ="American Indian or Alaskan Native">American Indian or Alaskan Native</option>
+							<option value ="Asian/Pacific Islander">Asian/Pacific Islander</option>
+							<option value = "Black or African American">Black or African American</option>
+							<option value ="Hispanic">Hispanic</option>
+							<option value ="White/Caucasion">White/Caucasion</option>
+							<option value ="Prefer Not To Answer">Prefer Not To Answer</option>
+							<option value ="Other">Other</option>
+						</select>
 					</div>
 
 					{/* Major */}
@@ -95,13 +111,26 @@ class SignUp extends React.Component {
 					{/* College Year */}
 					<div>
 						<label>Year In College</label>
-						<input type="text" name="CollegeYear" ref="name" placeholder="Freshman"></input>
+						{/* <input type="text" name="CollegeYear" ref="name" placeholder="Freshman"></input> */}
+						<select>
+							<option value ="Freshman">Freshman</option>
+							<option value ="Sophmore">Sophmore</option>
+							<option value ="Junior">Junior</option>
+							<option value ="Senior">Senior</option>
+						</select>
 					</div>
 
 					{/* T-Shirt Size */}
 					<div>
 						<label>T-Shirt Size</label><label style={{color:"#ff0000"}}>*</label>
-						<input type="text" name="ShirtSize" ref="name" placeholder="XS/S/M/L/XL"></input>
+						{/* <input type="text" name="ShirtSize" ref="name" placeholder="XS/S/M/L/XL"></input> */}
+						<select>
+							<option value ="XS">XS</option>
+							<option value ="S">S</option>
+							<option value ="M">M</option>
+							<option value ="L">L</option>
+							<option value ="XL">XL</option>
+						</select>
 					</div>
 
 					{/* Dietary Restrictions */}
@@ -167,7 +196,8 @@ class SignUp extends React.Component {
 					</div>
 
 					{/* Apply Button */}
-					<button>Apply</button>
+					<button class="popup" onclick="myFunction()"> Submit!
+					</button>
 				</form>
 			</div>
 	  	);
