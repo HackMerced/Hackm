@@ -1,5 +1,6 @@
 import React from 'react';
 import './signUp.css'; // css for this file
+import {universities, schools} from './data'
 
 class SignUp extends React.Component {
 	
@@ -7,7 +8,8 @@ class SignUp extends React.Component {
         super(props);
         this.state = {
             FirstName: '',
-            LastName: '',
+			LastName: '',
+			password: '',
             myEmail: '',
             phoneNumber: '',
             University: '',
@@ -23,14 +25,35 @@ class SignUp extends React.Component {
             resume: '',
             gitHub: '',
             LinkedIn: '',
-            Devpost: '',
+			Devpost: '',
+			// graduation date
+			// school standing: undergrad, grad, post doc
+			// is this your first hackathon: yes or no
+			// years of coding experience: <1, 1-2, 2-3, 3-4, 4-5, +5
+			// special requests 
+			// change video and photo to https://github.com/MLH/mlh-policies/blob/master/data-sharing.md
+
         };
         // this.handleInputChange = this.handleInputChange.bind(this);
         // this.handleSubmit = this.handleSubmit.bind(this);
-    }
+	}
+
+
+
 	render() {
+		// can add vars lol
+		
+		function uniList() {
+			let result = []
+			for (let i = 0; i < universities.length; i++) {
+				result.push(<option value={universities[i]}>{universities[i]}</option>)
+			}
+			return result
+		}
+	
 		return ( 
-			<div>
+			<div id ="body">
+				<div id ="formID">
 				<form>
 					{/* First Name */}
 					<div>
@@ -42,6 +65,13 @@ class SignUp extends React.Component {
 					<div>
 						<label>Last Name</label><label style={{color:"#ff0000"}}>*</label>
 						<input type="text" name="LastName" ref="name" placeholder="Last Name"></input>
+					</div>
+
+					{/* Password */}
+					<div>
+						<label>Password</label><label style={{color:"#ff0000"}}>*</label>
+						<input type="password" name ="password"></input>
+
 					</div>
 
 					{/* Email */}
@@ -58,8 +88,11 @@ class SignUp extends React.Component {
 
 					{/* University */}
 					<div>
-						<label>University</label>
-						<input type="text" name="University" ref="name" placeholder="University of..."></input>
+						<label>University</label> <label style={{color:"#ff0000"}}>*</label>
+						{/* <input type="text" name="University" ref="name" placeholder="If High Schooler, Choose Last Option"></input> */}
+						<select>
+						<option value="" disabled selected>---Select Option---</option>
+						{uniList()}</select>
 					</div>
 
 					{/* High School */}
@@ -79,6 +112,7 @@ class SignUp extends React.Component {
 						<label>Gender</label><label style={{color:"#ff0000"}}>*</label>
 						{/* <input type="text" name="Gender" ref="name" placeholder="Male/Female/Other"></input> */}
 						<select>
+						<option value="" disabled selected>---Select Option---</option>
 							<option value ="Male">Male</option>
 							<option value ="Female">Female</option>
 							<option value ="Other">Other</option>
@@ -92,10 +126,11 @@ class SignUp extends React.Component {
 						{/* <input type="text" name="Ethnicity" ref="name" placeholder="Race"></input> */}
 						
 						<select>
+						<option value="" disabled selected>---Select Option---</option>
 							<option value ="American Indian or Alaskan Native">American Indian or Alaskan Native</option>
 							<option value ="Asian/Pacific Islander">Asian/Pacific Islander</option>
-							<option value = "Black or African American">Black or African American</option>
-							<option value ="Hispanic">Hispanic</option>
+							<option value ="Black or African American">Black or African American</option>
+							<option value ="Latino">Latino</option>
 							<option value ="White/Caucasion">White/Caucasion</option>
 							<option value ="Prefer Not To Answer">Prefer Not To Answer</option>
 							<option value ="Other">Other</option>
@@ -113,10 +148,13 @@ class SignUp extends React.Component {
 						<label>Year In College</label>
 						{/* <input type="text" name="CollegeYear" ref="name" placeholder="Freshman"></input> */}
 						<select>
+						<option value="" disabled selected>---Select Option---</option>
 							<option value ="Freshman">Freshman</option>
 							<option value ="Sophmore">Sophmore</option>
 							<option value ="Junior">Junior</option>
 							<option value ="Senior">Senior</option>
+							<option value ="+5">+5</option>
+							{/* //fix later */}
 						</select>
 					</div>
 
@@ -125,6 +163,7 @@ class SignUp extends React.Component {
 						<label>T-Shirt Size</label><label style={{color:"#ff0000"}}>*</label>
 						{/* <input type="text" name="ShirtSize" ref="name" placeholder="XS/S/M/L/XL"></input> */}
 						<select>
+						<option value="" disabled selected>---Select Option---</option>
 							<option value ="XS">XS</option>
 							<option value ="S">S</option>
 							<option value ="M">M</option>
@@ -199,6 +238,7 @@ class SignUp extends React.Component {
 					<button class="popup" onclick="myFunction()"> Submit!
 					</button>
 				</form>
+			</div>
 			</div>
 	  	);
 	}
