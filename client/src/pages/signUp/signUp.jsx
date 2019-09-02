@@ -26,7 +26,6 @@ class SignUp extends React.Component {
             gitHub: '',
             LinkedIn: '',
 			Devpost: '',
-			// graduation date
 			// school standing: undergrad, grad, post doc
 			// is this your first hackathon: yes or no
 			// years of coding experience: <1, 1-2, 2-3, 3-4, 4-5, +5
@@ -104,7 +103,7 @@ class SignUp extends React.Component {
 					{/* Birthday npm install react-datepicker --save*/}
 					<div>
 						<label>Date of Birth</label><label style={{color:"#ff0000"}}>*</label>
-						<input type="date" name="Birthday" ref="name" placeholder="Last Name"></input>
+						<input type="date" name="Birthday" ref="name" placeholder="Birthday"></input>
 					</div>
 
 					{/* Gender */}
@@ -155,6 +154,23 @@ class SignUp extends React.Component {
 							<option value ="Senior">Senior</option>
 							<option value ="+5">+5</option>
 							{/* //fix later */}
+						</select>
+					</div>
+
+					{/* Graduation Date */}
+					<div>
+						<lable>Graduation Date</lable>
+						<input type="date" name="GradDate" ref="name" placeholder="GradDate"></input>
+					</div>
+
+					{/* school standing */}
+					<div>
+						<lable>School Standing</lable>
+						<select>
+							<option value="" disable selected>---Select Option---</option>
+								<option value ="undergrad">Undergraduate</option>
+								<option value ="Graduate">Graduate</option>
+								<option value ="postDoc">Post Doctorate</option>
 						</select>
 					</div>
 
