@@ -1,6 +1,7 @@
 import React from "react";
 import "./login.css";
 import { Link } from "react-router-dom"; //Links Library from React Router
+import axios from 'axios';
 
 class Login extends React.Component {
   constructor(props) {
@@ -65,12 +66,19 @@ class Login extends React.Component {
     this.setState({
       formValid: this.state.emailValid && this.state.passwordValid
     });
-  }
+	}
 
   handleSubmit(event) {
-    console.log(this.state);
+		console.log(this.state);
+		// this.validateUser(this.state.email, this.state.password);
     event.preventDefault();
-  }
+	}
+
+	validateUser(email, password) {
+		axios.get(`/api/hacker/${email}`).then((response) => {
+			console.log(response);
+		})
+	}
 
   render() {
     return (
