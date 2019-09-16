@@ -15,7 +15,7 @@ const api = require('./api/routes');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
-// app.use('/api', api);
+app.use('/api', api);
 
 // const client = new MongoClient(process.env.uri, { useNewUrlParser: true });
 // client.connect(err => {
@@ -32,9 +32,7 @@ app.use(morgan('tiny'));
 //   client.close();
 // });
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '/client/build/'))
-});
+app.use(express.static(path.join(__dirname, '/client/build/')))
 
 
 
