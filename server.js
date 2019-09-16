@@ -6,11 +6,11 @@ const morgan = require('morgan');
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
 
-const hackers = require('./api/hackers');
-const mailing = require('./api/mailing');
-const mentors = require('./api/mentors');
-const sponsors = require('./api/sponsors');
-const volunteers = require('./api/volunteers');
+const hackers = require('./routes/hackers');
+const mailing = require('./routes/mailing');
+const mentors = require('./routes/mentors');
+const sponsors = require('./routes/sponsors');
+const volunteers = require('./routes/volunteers');
 
 const app = express();
 const port = process.env.PORT || 3000;
