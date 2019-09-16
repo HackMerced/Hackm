@@ -15,7 +15,7 @@ const api = require('./api/routes');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
-app.use('/api', api);
+app.use('/', api);
 
 // const client = new MongoClient(process.env.uri, { useNewUrlParser: true });
 // client.connect(err => {
