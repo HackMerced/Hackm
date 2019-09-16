@@ -6,16 +6,19 @@ const morgan = require('morgan');
 const MongoClient = require('mongodb').MongoClient;
 require('dotenv').config();
 
+const hackers = require('./api/hackers');
+const mailing = require('./api/mailing');
+const mentors = require('./api/mentors');
+const sponsors = require('./api/sponsors');
+const volunteers = require('./api/volunteers');
+
 const app = express();
 const port = process.env.PORT || 3000;
-
-const api = require('./api/routes');
-
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(morgan('tiny'));
-app.use('/', api);
+app.use('/api', hackers, mailing, mentors, sponsors, volunteers);
 
 // const client = new MongoClient(process.env.uri, { useNewUrlParser: true });
 // client.connect(err => {
@@ -34,11 +37,6 @@ app.use('/', api);
 
 app.use(express.static(path.join(__dirname, '/client/build/')))
 
-
-
 app.listen(port, async () => {
    console.log(`Initiating server on ${port}`)
 });
-
-
-
