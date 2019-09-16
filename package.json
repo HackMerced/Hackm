@@ -9,10 +9,14 @@
     "clean": "concurrently \"yarn clean:client\" \"yarn clean:server\"",
     "clean:client": "cd client && rm -rf ./node_modules yarn.lock",
     "clean:server": "rm -rf ./node_modules yarn.lock",
-
-    "dev": "concurrently \"yarn dev:client\" \"yarn dev:server\" && echo \"HackMerced V up and running\"",
-    "dev:client": "cd ./client && yarn build",
-    "dev:server": "nodemon server.js"
+    "setup": "yarn install:server && yarn install:client",
+    "install:client": "cd client && yarn install",
+    "install:server": "yarn install",
+    "start": "concurrently \"yarn start:client\" \"yarn start:server\"",
+    "dev": "concurrently \"yarn start:client\" \"yarn dev:server\"",
+    "start:client": "cd client && yarn build",
+    "start:server": "node server.js",
+    "dev:server": "nodemon server.js" 
   },
   "dependencies": {
     "body-parser": "^1.19.0",
