@@ -1,25 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Footer from './component//Footer/Footer.jsx';
+import Main from './component/Main/Main.jsx'
+import NavigationBar from './component/Header/Navigation-Bar.jsx'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment> 		{/* This allows children, and removal of unnecessary <div> wrapper */}
+      <NavigationBar />
+      <Main /> 		{/* Link to React Router */}
+      <Footer />	{/* Link to Footer.js */}
+    </React.Fragment>
   );
 }
 
