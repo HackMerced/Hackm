@@ -75,31 +75,31 @@ class SignUp extends React.Component {
 						{/* Last Name */}
 						<div>
 							<label>Last Name <font color="red">*</font></label>
-							<input type="text" name="LastName" ref="name" placeholder="Last Name"></input>
+							<input required type="text" name="LastName" ref="name" placeholder="Last Name"></input>
 						</div>
 
 						{/* Password */}
 						<div>
 							<label>Password <font color="red">*</font></label>
-							<input type="password" name="password"></input>
+							<input required type="password" name="password"></input>
 
 						</div>
 
 						{/* Email */}
 						<div>
 							<label>Email <font color="red">*</font></label>
-							<input type="email" name="myEmail" ref="name" placeholder="name@example.com"></input>
+							<input required type="email" name="myEmail" ref="name" placeholder="name@example.com"></input>
 						</div>
 
 						{/* Phone Number */}
 						<div>
 							<label>Phone Number <font color="red">*</font></label>
-							<input type="number" name="phoneNumber" ref="name" placeholder="123-456-5432"></input>
+							<input required type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phoneNumber" ref="name" placeholder="123-456-5432"></input>
 						</div>
 
 						{/* First Hackathon */}
 						<div>
-							<lable>Is this your first hackathon?</lable>
+							<lable>Is this your first hackathon?<font color="red">*</font></lable>
 
 							<input type="radio" id="firstYes" name="drone" value="yes"></input><lable>Yes</lable>
 
@@ -159,13 +159,13 @@ class SignUp extends React.Component {
 
 						{/* Major */}
 						<div>
-							<label>College Major</label>
-							<input type="text" name="CollegeMajor" ref="name" placeholder="Major"></input>
+							<label>College Major <font color="red">*</font></label>
+							<input type="text" name="CollegeMajor" ref="name" placeholder="Major/ N/A"></input>
 						</div>
 
 						{/* College Year */}
 						<div>
-							<label>Year In College</label>
+							<label>Year</label>
 							{/* <input type="text" name="CollegeYear" ref="name" placeholder="Freshman"></input> */}
 							<select>
 								<option value="" disabled selected>---Select Option---</option>
@@ -189,6 +189,7 @@ class SignUp extends React.Component {
 							<lable>School Standing</lable>
 							<select>
 								<option value="" disable selected>---Select Option---</option>
+								<option value="HSchool">High School</option>
 								<option value="undergrad">Undergraduate</option>
 								<option value="Graduate">Graduate</option>
 								<option value="postDoc">Post Doctorate</option>
@@ -269,8 +270,6 @@ class SignUp extends React.Component {
 							<h5>I give permission to HackMerced to photograph and video-graph me for the purposes of promoting HackMerced in the future. <font color="red">*</font></h5>
 							<input name="drone" type="radio" value="yes" id="permissionYes"></input>
 							<span>Yes</span>
-							<input name="drone" type="radio" value="no" id="permissionNo"></input>
-							<span>No</span>
 						</div>
 
 						{/* Apply Button */}
