@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom' //Links Library from React Router
-import './navBar.css'
+import './header.css'
 import logo from './logo.png';
 /* This Nav bar is super rough its not nearly as close to the draft sketched by the design team */
 

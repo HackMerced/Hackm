@@ -36,10 +36,18 @@
 }
 
 .signUp-text{
-  padding-top: 50px; /* brings sign-up lower and shrinks down text */
+  padding-top: 25px; /* brings sign-up lower and shrinks down text */
   font-size: 10px;
 }
 
 .signUp-link{
   margin-left: 5px; /* Adds a space between link and text */
+}
+
+.alert{
+  padding-left: 150px; /* Left aligns "keep me logged in" */
+  display:none;
+  font-size:12px;
+  color:#f00;
+  float:left;
 }

@@ -1,19 +1,22 @@
 import React from "react";
 import "./login.css";
-import { Link } from "react-router-dom"; //Links Library from React Router
+import { Link, Redirect } from "react-router-dom"; //Links Library from React Router
 import axios from 'axios';
+import { Keccak } from 'sha3';
 
 class Login extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      email: "",
-      password: "",
-      keepLoggedIn: true,
+      tempUser: "admin@hackmerced.io",
+      tempPass: "289e12324de44e47d4a98e4854288df5ad25011e4e52addac2bd54ad24f92b75",
+      userEmail: "",
+      userPassword: "",
+      userKeepLoggedIn: false,
       formErrors: { email: "", password: "" },
       emailValid: false,
-      passwordValid: false,
-      formValid: false
+      //passwordValid: false,
+      formValid: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -24,10 +27,12 @@ class Login extends React.Component {
     const target = event.target;
     const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
-
+    //console.log(target);
+    //console.log(value);
+    //console.log(name);
     this.setState(
       {
-        [name]: value
+        [name]: name === "userPassword" ? this.hashMe(value) : value,
       },
       () => {
         this.validateField(name, value);
@@ -35,20 +40,37 @@ class Login extends React.Component {
     );
   }
 
+  hashMe(pass) {
+  	const hash = new Keccak(256);
+  	hash.reset();
+  	hash.update(pass);
+  	const status = hash.digest('hex');
+
+/*
+  	hash.reset();
+  	hash.update(status).update('Z');
+  	const temp = hash.digest('hex');
+  	console.log(temp);
+*/
+
+  	return status;
+	}
+
   validateField(fieldName, value) {
     let fieldValidationErrors = this.state.formErrors;
     let emailValid = this.state.emailValid;
-    let passwordValid = this.state.passwordValid;
 
     switch (fieldName) {
-      case "email":
+      case "userEmail":
         emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
-        fieldValidationErrors.email = emailValid ? "" : " is invalid";
+        fieldValidationErrors.email = emailValid ? "" : "is invalid";
         break;
-      case "password":
+        /*
+      case "userPassword":
         passwordValid = value.length >= 6;
-        fieldValidationErrors.password = passwordValid ? "" : " is too short";
+        fieldValidationErrors.password = passwordValid ? "" : "is too short";
         break;
+        */
       default:
         break;
     }
@@ -56,28 +78,54 @@ class Login extends React.Component {
       {
         formErrors: fieldValidationErrors,
         emailValid: emailValid,
-        passwordValid: passwordValid
       },
-      this.validateForm
+      () => {
+      this.validateForm();
+  	  }
     );
   }
 
   validateForm() {
     this.setState({
-      formValid: this.state.emailValid && this.state.passwordValid
+      formValid: this.state.emailValid
     });
 	}
 
   handleSubmit(event) {
 		console.log(this.state);
-		// this.validateUser(this.state.email, this.state.password);
+		const oldPass = this.state.userPassword;
+		const hash = new Keccak(256);
+		var isUserLoggedIn = false;
+		for(var i = 65; i <= 122 && isUserLoggedIn === false; i++){ //122
+			hash.reset();
+			const attempt = String.fromCharCode(i);
+  			hash.update(oldPass).update(attempt);
+  			const newPass = hash.digest('hex');	
+  			if(this.validateUser(this.state.userEmail, newPass)){
+  				this.props.history.push("/admin");
+  				isUserLoggedIn = true;
+  			}
+  			console.log(newPass);
+		}
     event.preventDefault();
 	}
 
-	validateUser(email, password) {
+	properRedirect(){
+		this.props.history.push("/admin");
+	}
+
+	validateUser(attemptEmail, attemptPassword) {
+		const realUser = this.state.tempUser;
+		const realPass = this.state.tempPass;
+		/*
 		axios.get(`/api/hacker/${email}`).then((response) => {
 			console.log(response);
 		})
+		*/
+		if(attemptEmail === realUser && attemptPassword === realPass){
+			console.log(true);
+			return true;
+		}
 	}
 
   render() {
@@ -90,21 +138,20 @@ class Login extends React.Component {
           <main>
             <form onSubmit={this.handleSubmit}>
               <section className="email">
-                {" "}
                 {/* Email Section */}
                 <p>Email</p>
               </section>
               <input
                 type="text"
+                id="user"
                 style={{ width: 200 }}
-                name="email"
+                name="userEmail"
                 value={this.state.email}
                 onChange={this.handleChange}
                 required
-              />{" "}
+              />
               {/* Email input box */}
               <section className="pass">
-                {" "}
                 {/* Password Section */}
                 <p>Password</p>
               </section>
@@ -112,20 +159,19 @@ class Login extends React.Component {
                 type="password"
                 id="pass"
                 style={{ width: 200 }}
-                name="password"
-                minLength="8"
+                name="userPassword"
+                //minLength="8"
                 value={this.state.password}
                 onChange={this.handleChange}
                 required
-              />{" "}
+              />
               {/* Hidden input Password */}
               <br></br>
               <section className="logged-In">
-                {" "}
                 {/* Keep me Logged in */}
                 <input
                   type="checkbox"
-                  name="keepLoggedIn"
+                  name="userKeepLoggedIn"
                   value={this.state.keepLoggedIn}
                   onChange={this.handleChange}
                 />
@@ -137,14 +183,14 @@ class Login extends React.Component {
                 type="submit"
                 style={{ width: 210 }}
                 value="Lets Go!"
-              ></input>{" "}
+              ></input>
               {/* Submit */}
               <br></br>
               <br></br>
             </form>
           </main>
+          <span className="alert">Nope. Try Again.</span>
           <section className="signUp-text">
-            {" "}
             {/* Create an Account Section*/}
             <span>Don’t have an account?</span>
             <span>
