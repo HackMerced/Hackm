@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css'
 import './FAQ.css'i
+=======
+
+
+import React from "react";
+import 'font-awesome/css/font-awesome.min.css'
+import './FAQ.css'
+>>>>>>> f90d2ea79721415b4f5560f805756c976d862891
 
 const Faqs = () => (
   <div className="Faqs" id="Faqs">
