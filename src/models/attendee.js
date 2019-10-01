@@ -1,39 +1,41 @@
 const mongoose = require("mongoose");
 
-const hackerSchema = new mongoose.Schema({
-  firstName: {
-    type: String
+const universities = require('../../client/src/constants');
+
+const attendeeSchema = new mongoose.Schema({
+  first: {
+    type: String,
+    alias: "First Name",
+    required: [true, "A first name is required!"],
+    lowercase: true,
+    minlength: 3
   },
-  lastName: {
-    type: String
+  last: {
+    type: String,
+    alias: "Last Name",
+    required: [true, "A last name is required!"],
+    lowercase: true,
+    minlength: 3
   },
   email: {
     type: String,
-    index: {
-      unique: true
-    },
-    validate: {
-      validator(e) {
-        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-          e
-        );
-      },
-      message: "{VALUE} is not a valid email!"
-    },
-    required: [true, "User email required"]
+    alias: "Email Address",
+    match: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    required: [true, "An email is required!"],
+    lowercase: true,
+    minlength: 7
   },
   phone: {
     type: String,
-    validate: {
-      validator(e) {
-        return /^[+0-9\s]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/.test(e);
-      },
-      message: "{VALUE} is not a valid phone number!"
-    },
-    required: [true, "User phone number required"]
+    alias: "Phone Number",
+    match: /^[+0-9\s]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/,
+    required: [true, "User phone number required"],
+    minlength: 10
   },
   school: {
     type: String,
+    alias: "University or High School", 
+    enum: universities,
     required: [true, "School required"]
   },
   age: {
@@ -85,9 +87,9 @@ const hackerSchema = new mongoose.Schema({
     enum: ["submitted", "accepted", "declined", "waitListed", "checkedIn"],
     required: [true, "Application status required"]
   },
-
   privileges: {
     type: String,
+    enum: ["hacker", "volunteer", "mentor", "sponsor", "admin", "ADMIN"],
     required: [true, "User privileges required"]
   },
   qr: {
@@ -99,8 +101,4 @@ const hackerSchema = new mongoose.Schema({
   }
 });
 
-hackerSchema.pre("save", function lowerCaseFields(next) {
-  this.firstName = this.firstName.toLowerCase();
-});
-
-module.exports = mongoose.model("Hacker", hackerSchema);
+module.exports = mongoose.model("Attendee", attendeeSchema);
