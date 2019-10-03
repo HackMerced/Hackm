@@ -84,13 +84,19 @@ router.patch("/attendee", async (req, res) => {});
  * @apiError (Forbidden 403)     Forbidden     Only admins can access the data
  */
 router.post("/attendees", async (req, res) => {
-  Attendee.insertMany(req.body, (error, docs) => {
-    if (error) {
-      res.send(error);
-    }
+  Attendee.findOne({ email: req.body.email }).then(user => {
+    if (user) {
+      return res.status(400).json({ email: "Email already exists" });
+    } else {
+      Attendee.insertMany(req.body, (error, docs) => {
+        if (error) {
+          res.send(error);
+        }
 
-    if (docs) {
-      res.send(docs);
+        if (docs) {
+          res.send(docs);
+        }
+      });
     }
   });
 });
