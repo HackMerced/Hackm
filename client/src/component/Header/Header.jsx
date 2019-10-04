@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom' //Links Library from React Router
-import './navBar.css'
+import './header.css'
 import logo from './logo.png';
 /* This Nav bar is super rough its not nearly as close to the draft sketched by the design team */
 
@@ -11,7 +11,7 @@ class NavigationBar extends React.Component {
             <article className="App-nav" id="Navigation-Bar">
                 <nav className = "nav-link">
                     <Link to='/' title= "Back Home!">
-                        <img class="HackMerced-logo" src={logo} title= "HackMerced" alt="Hack Merced"/> {/* HackMerced icon goes to home page */}
+                        <img className="HackMerced-logo" src={logo} title= "HackMerced" alt="Hack Merced"/> {/* HackMerced icon goes to home page */}
                     </Link>
                 </nav>
                 <nav className = "nav-link">
