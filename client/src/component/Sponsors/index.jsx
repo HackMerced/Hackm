@@ -2,8 +2,8 @@ import React from 'react';
 import './index.css';
 import ASUCM from "../../assests/asucm_logo.png";
 import password from "../../assests/1password.png";
-import DigitalOcean from "../../assests/DigitalOcean_logo.svg.png";
-import sketch from "../../assests/sketch-3-2014.png";
+import DigitalOcean from "../../assests/DO_Logo_Vertical_White.png";
+import sketch from "../../assests/sketch-logo-dark-transparent@2x.png";
 import roche from "../../assests/Roche_Logo.svg"
 //inserted image by moving from file to file
 
@@ -11,7 +11,7 @@ class Sponsors extends React.Component {
     render() {
         return( 
             <div>
-                <font size = "9" color ="white"> 
+                <font size = "7" color ="white"> 
               <p class = "right"> SPONSORS </p>
                 </font>
              <p><a href= "https://asucm.ucmerced.edu/" >
