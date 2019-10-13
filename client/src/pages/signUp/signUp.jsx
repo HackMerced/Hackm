@@ -1,6 +1,6 @@
 import React from 'react';
 import './signUp.css'; // css for this file
-import { universities} from './data'
+import { universities} from '../../constants/data'
 import axios from 'axios';
 
 console.log('before Axios')
