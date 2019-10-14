@@ -3,25 +3,19 @@ import React from "react";
 class Schedule extends React.Component {
   render() {
     return (
-        <table id="simple-board">
-        <tbody>
-          <tr id="row0">
-            <td id="cell0-0"></td>
-            <td id="cell0-1"></td>
-            <td id="cell0-2"></td>
-          </tr>
-          <tr id="row1">
-            <td id="cell1-0"></td>
-            <td id="cell1-1"></td>
-            <td id="cell1-2"></td>
-          </tr>
-          <tr id="row2">
-            <td id="cell2-0"></td>
-            <td id="cell2-1"></td>
-            <td id="cell2-2"></td>
-          </tr>
-        </tbody>
-      </table>
-        );
-    }
+      <article>
+        <div>
+          <table>
+            <tr className="row">
+              <td className="Event">Event 1</td>
+              <td className="Time">Time</td>
+              <td className="Location">Location</td>
+            </tr>
+          </table>
+        </div>
+      </article>
+    );
+  }
 }
+
+export default Schedule; //rending Main webpage

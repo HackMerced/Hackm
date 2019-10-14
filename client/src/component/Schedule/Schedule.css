@@ -1,3 +1,30 @@
 .simpleboard {
-    
+    background: red;
+}
+
+.row {
+    padding: 10, 30;
+}
+
+.Event {
+    font-family: arial;
+    font: 12;
+}
+
+.Time {
+    font-family: arial;
+    font: 12;
+}
+
+.Location {
+    font-family: arial;
+    font: 12;
+}
+
+tr {
+    padding: 10, 30;
+}
+
+td {
+    padding: 10, 30;
 }
