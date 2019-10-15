@@ -1,5 +1,9 @@
 body {
 background-color:  #2a2834;
+background-image: url("Background.png");
+background-repeat: no-repeat;
+background-size: 1820px;
+background-attachment: scroll;
     text-align: center;
     color: white;
     font-size: 35px !important;
