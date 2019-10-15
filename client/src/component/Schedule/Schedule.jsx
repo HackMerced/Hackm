@@ -11,6 +11,16 @@ class Schedule extends React.Component {
               <td className="Time">Time</td>
               <td className="Location">Location</td>
             </tr>
+            <tr className="row">
+              <td className="Event">Event 2</td>
+              <td className="Time">Time</td>
+              <td className="Location">Location</td>
+            </tr>
+            <tr className="row">
+              <td className="Event">Event 3</td>
+              <td className="Time">Time</td>
+              <td className="Location">Location</td>
+            </tr>
           </table>
         </div>
       </article>

@@ -1,5 +1,8 @@
-.simpleboard {
-    background: red;
+table {
+    text-align: center;
+    padding: 100;
+    background-color: transparent;
+    font: 30;
 }
 
 .row {

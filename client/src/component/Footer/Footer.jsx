@@ -16,7 +16,7 @@ const Footer = () => {
 			  	<a href="https://www.instagram.com/hackmerced/" style={{ color: '#0000' }}> {/* goes to HackMerced IG*/}
 			  		<i className="fa fa-instagram"></i> {/* instagram icon */}
 			  	</a>
-			  	<a href="#" style={{ color: '#0000' }}> {/* we haven't created a HackMerced Slack so this is temporary */}
+			  	<a href="https://www.google.com" style={{ color: '#0000' }}> {/* we haven't created a HackMerced Slack so this is temporary */}
 			  		<i className="fa fa-slack"></i> {/* slack icon */}
 			  	</a>
 			  	<a href="https://github.com/HackMerced" style={{ color: '#0000' }}> {/* link to HackMerced github repo since we are opensource */}
