@@ -7,7 +7,6 @@ const App = () => {
   return (
     <React.Fragment> 		{/* This allows children, and removal of unnecessary <div> wrapper */}
       <NavigationBar />
-      <Title />
       <Main /> 		{/* Link to React Router */}
       <Footer />	{/* Link to Footer.js */}
     </React.Fragment>
