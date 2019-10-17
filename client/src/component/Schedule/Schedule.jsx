@@ -1,5 +1,5 @@
 import React from "react";
-import './schedule.css'
+import './Schedule.css'
 
 class Schedule extends React.Component {
   render() {
