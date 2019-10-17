@@ -5,8 +5,6 @@ class ContactUs extends React.Component {
         return (
             <article className="App-con" id="Contact-Us"></article>
             //all that i have atm
-
-
             
         )
     }
