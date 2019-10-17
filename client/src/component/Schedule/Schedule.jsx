@@ -5,6 +5,7 @@ class Schedule extends React.Component {
   render() {
     return (
       <article>
+        <h1>Event Schedule</h1>
         <div>
           <table id="schedule">
             <tr>
