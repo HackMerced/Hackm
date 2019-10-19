@@ -1,0 +1,16 @@
+ .App-contact {
+    background-color: #030b3517;
+    align-items: center; 
+    justify-content: center; /* centers items inside the divs */
+    font-size: 25px;
+    min-height: 8vh;
+}
+.name {
+    color: black;
+}
+.email {
+    color: black;
+}
+.message {
+    color: black;
+}
