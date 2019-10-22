@@ -1,0 +1,34 @@
+name: HackMerced CI
+
+on: 
+  push:
+    # Sequence of patterns matched against refs/heads
+    branches:
+      - 'feature/*' # Push events to branches matching refs/heads/feature/*
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - v0 # Push events to v0 tag
+
+jobs:
+  build:
+    name: Test application and make sure it runs on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x]
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+    - name: Checkout to current branch
+      uses: actions/checkout@v0
+    - name: Configure Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v0
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        yarn setup
+        yarn start
+      env:
+        CI: true
