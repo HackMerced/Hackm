@@ -22,7 +22,7 @@
     max-width: 250px;
     height: 200px;   
 }
-.password {
+.password { /* 1 password logo position & size */
     right: 75px;
     bottom: 50px;
     position: relative;
@@ -30,7 +30,7 @@
     max-width: 250px;
     height: 50px;
 }
-.sketch {
+.sketch { /* sketch position & size*/
     bottom: 200px;
     position: relative;
     left: 150px;
@@ -38,10 +38,10 @@
     max-width: 280px;
     height: 125px;
 }
-.App-Sponsors {
+.App-Sponsors { /* background color */
     background-color:#2a2834 
 }
-.right {
+.right { /* Title - (Sponsors) styling */
     text-align: center;
     border-bottom: solid;
     border-color: rgb(209, 104, 5);
@@ -53,10 +53,10 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 5px;
     line-height: 50px;
-    
+
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-.sponsoring {
+.sponsoring { /* entire icons styling */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -66,12 +66,12 @@
     min-height: 8vh;
     border: 0;
 }
-.column {
+.column { /* top icons position & size*/
     float: left;
     width: 33.33%;
     padding: 5px;
 }
-.row::after {
+.row::after { /* row display */
     content: "";
     clear: both;
     display: table;
