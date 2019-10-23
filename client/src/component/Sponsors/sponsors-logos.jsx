@@ -16,7 +16,7 @@ class Sponsors extends React.Component {
               <p class = "right"> SPONSORS </p>
                 </font>
 
-            <div class = "row"> {/*made a row for the display*/}
+            <div className = "row"> {/*made a row for the display*/}
                 <div className="column"> {/*named it column instead of top*/}
              <a href= "https://asucm.ucmerced.edu/" > {/*goes to ASUCM site*/}
                 <img className="asucm" src={ASUCM} alt="ASUCM" /> {/*ASUCM logo and link*/}
