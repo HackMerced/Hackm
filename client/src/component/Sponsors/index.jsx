@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './sponsors-logos.css';
 import ASUCM from "../../assests/asucm_logo.png";
 import password from "../../assests/1password.png";
 import DigitalOcean from "../../assests/DO_Logo_Vertical_White.png";
@@ -10,51 +10,46 @@ import roche from "../../assests/Roche_Logo.svg"
 class Sponsors extends React.Component {
     render() {
         return( 
-            <div className = "Sponsors" id= "Sponsors">
-                 <div class="container">
-                 <section class="sponsoring">
-                <div class="rows">
+            <article className = "App-Sponsors" id= "Sponsors">
+                 <div className="sponsoring">
                 <font size = "6" color ="white"> 
               <p class = "right"> SPONSORS </p>
                 </font>
 
-            <div class = "top">
-                <div class="ASUCM"> 
-                
-             <p><a href= "https://asucm.ucmerced.edu/" >
+            <div class = "row">
+                <div className="column">
+             <a href= "https://asucm.ucmerced.edu/" >
                 <img className="asucm" src={ASUCM} alt="ASUCM" /> 
-                 </a> </p>
+                 </a> 
                  </div>
-
-
-                <div class="digitalocean">
+            <div className = "column">
             <p><a href = "https://digitalocean.com/">
-                 <img className = "digitalocean" src={DigitalOcean} alt="digitalocean" /> 
+                 <img className = "digitalocean" src={DigitalOcean} alt="Digital Ocean" /> 
             </a></p>
             </div>
+
+            <div className = "column">
+             <a href = "https://roche.com/" >
+                 <img className = "roche" src= {roche} alt="Roche"/> 
+                 </a>
                  </div>
-
-            <div class= "sketch">
-            <p><a href = "https://www.sketch.com/">
-                 <img className = "sketch" src = {sketch} alt="sketch" />
-            </a></p>
             </div>
 
-            <div class= "password">
-            <p><a href= "https://1password.com/" >
-                <img className= "password" src = {password} alt="password"/>
-                </a></p>
+            <div className = "bottom">
+                <div className= "password">
+            <a href= "https://1password.com/" >
+                <img className= "password" src = {password} alt="1Password"/>
+                </a>
                 </div>
-
-            <div class= "roche">
-             <p><a href = "https://roche.com/" >
-                 <img className = "roche" src= {roche} alt="roche"/> 
-                 </a></p>
-                 </div>
+            
+                <div className= "bottom">
+            <a href = "https://www.sketch.com/">
+                 <img className = "sketch" src = {sketch} alt="Sketch" />
+            </a>
                          </div>
-                     </section>
-                 </div>
-             </div>       
+                    </div>       
+                </div>
+             </article>
         )              
     }
 }
