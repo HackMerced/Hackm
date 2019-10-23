@@ -1,11 +1,13 @@
 import React from 'react'
 import logo from '../../logo.svg';
 import './home.css'; //import css for this page
+import Faqs from '../../component/faqs/faqs';
 
 class Home extends React.Component {   // This page is the exact same page as the original example
   render() {
     return (
-      <article className="Home">
+     <div>
+        <article className="Home">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -19,6 +21,8 @@ class Home extends React.Component {   // This page is the exact same page as th
             Learn React
           </a>
       </article>
+      <Faqs/>
+     </div>
       );
   }
 }

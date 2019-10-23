@@ -1,11 +1,11 @@
 import React from "react";
 import 'font-awesome/css/font-awesome.min.css'
-import './FAQ.css'
+//import './FAQ.css'
 
 
 const Faqs = () => (
   <div className="Faqs" id="Faqs">
-    <ScrollAnimation animateIn="fadeIn" duration={1} animateOnce={true}>
+    {/* <ScrollAnimation animateIn="fadeIn" duration={1} animateOnce={true}> */}
       <h2>
         <u>FREQUENTLY ASKED QUESTIONS</u>
       </h2>
@@ -114,7 +114,7 @@ const Faqs = () => (
           .
         </p>
       </div>
-    </ScrollAnimation>
+    {/* </ScrollAnimation> */}
   </div>
 );
 
