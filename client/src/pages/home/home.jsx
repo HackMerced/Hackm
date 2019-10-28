@@ -1,13 +1,18 @@
 import React from 'react'
+import View from 'react-view-component/lib/View';
 import logo from '../../logo.svg';
+import FAQ from '../../component/FAQ/FAQ.jsx';
 import './home.css'; //import css for this page
-import Faqs from '../../component/faqs/faqs';
+
 
 class Home extends React.Component {   // This page is the exact same page as the original example
   render() {
     return (
-     <div>
-        <article className="Home">
+      <View style={{flex: 1}}> 
+      <div>
+         <FAQ />
+      </div>
+      <article className="Home">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -21,8 +26,7 @@ class Home extends React.Component {   // This page is the exact same page as th
             Learn React
           </a>
       </article>
-      <Faqs/>
-     </div>
+      </View>
       );
   }
 }
