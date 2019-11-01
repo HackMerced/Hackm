@@ -1,43 +1,78 @@
 .digitalocean  {
-    right: 270px;
-    bottom: 15px;
-    position: relative;
-    width: 100%;
-    max-width: 210px;
-    height: 200px;
-
-}
-.roche { 
-    bottom: 215px;
-    left: 250px;
+    left: 270px;
+    bottom: 235px;
     position: relative;
     width: 100%;
     max-width: 225px;
-    height: 150px;
+    height: 225px;
+
 }
-.asucm {
-    left: 525px;
+.roche { 
+    bottom: 190px;
+    right: 300px;
     position: relative;
     width: 100%;
-    max-width: 250px;
+    max-width: 500px;
+    height: 170px;
+}
+.asucm {
+    left: 510px;
+    position: relative;
+    width: 100%;
+    max-width: 230px;
     height: 200px;   
 }
 .password { /* 1 password logo position & size */
-    right: 75px;
+    left: 120px;
     bottom: 50px;
     position: relative;
     width: 100%;
     max-width: 250px;
-    height: 50px;
+    height: 40px;   
+}
+.stickeryou {
+    bottom: 180px;
+    position: relative;
+    right: 260px;
+    width: 240%;
+    max-width: 250px;
+    height: 150px;
+}
+.makeschool {
+    bottom: 150px;
+    position: relative;
+    left: 370px;
+    width: 300%;
+    max-width: 400px;
+    height: 150px;
 }
 .sketch { /* sketch position & size*/
-    bottom: 200px;
+    top: 50px;
     position: relative;
-    left: 150px;
-    width: 100%;
+    right: 0px;
+    width: 200%;
     max-width: 280px;
     height: 125px;
 }
+.balsamiq {
+    bottom: 75px;
+    position: relative;
+    left: 300px;
+    width: 100%;
+    max-width: 200px;
+    height: 115px;
+}
+
+.jetbrains {
+    bottom: 270px;
+    position: relative;
+    right: 10px;
+    width: 100%;
+    max-width: 175px;
+    height: 200px;
+}
+
+
 .App-Sponsors { /* background color */
     background-color:#2a2834 
 }
@@ -46,7 +81,7 @@
     border-bottom: solid;
     border-color: rgb(209, 104, 5);
     border-radius: 5px;
-    border-bottom-width: 5px;
+    border-bottom-width: 10px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-end-end-radius: 2px;
@@ -66,99 +101,161 @@
     min-height: 8vh;
     border: 0;
 }
-.column { /* top icons position & size*/
+.top { /* top icons position & size*/
     float: left;
     width: 33.33%;
     padding: 5px;
+    margin-right: 10px;
+}
+.middle { /* top icons position & size*/
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    margin-right: 10px;
+}
+.bottom { /* top icons position & size*/
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    margin-right: 10px;
 }
 .row::after { /* row display */
     content: "";
     clear: both;
     display: table;
   }
+
+
     
     
     /* iPhone 6, 7, 8 6+, 7+, 8+ ----------- */
     @media (min-width: 320px) and (max-width: 480px){
     
       /* Styles */
-        .digitalocean  {
-            right: 130px;
-            bottom: 20px;
-            position: relative;
-            width: 100%;
-            max-width: 120px;
-            height: 100px;
-        
-        }
-        .roche { 
-            bottom: 140px;
-            left: 130px;
-            position: relative;
-            width: 100%;
-            max-width: 110px;
-            height: 80px;
-        }
-        .asucm {
-            left: 245px;
-            top: 5px;
-            position: relative;
-            width: 100%;
-            max-width: 110px;
-            height: 90px;   
-        }
-        .password {
-            right: 35px;
-            bottom: 48px;
-            position: relative;
-            width: 100%;
-            max-width: 150px;
-            height: 25px;
-        }
-        .sketch {
-            bottom: 140px;
-            position: relative;
-            left: 100px;
-            width: 100%;
-            max-width: 150px;
-            height: 55px;
-        }
-        .App-Sponsors {
-            background-color:#2a2834 
-        }
-        .right {
-            text-align: center;
-            border-bottom: solid;
-            border-color: rgb(209, 104, 5);
-            border-radius: 5px;
-            border-bottom-width: 5px;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            border-end-end-radius: 2px;
-            border-top-left-radius: 2px;
-            border-top-right-radius: 5px;
-            line-height: 50px;
-            
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
-        }
-        .sponsoring {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding-left: 12.5px;
-            padding-right: 12.5px;
-            min-height: 8vh;
-            border: 0;
-        }
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-        }
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-          }
-        }
+      .digitalocean  {
+        left: 50px;
+        bottom: 15px;
+        position: relative;
+        width: 125%;
+        max-width: 200px;
+        height: 150px;
+    
+    }
+    .roche { 
+        bottom: 175px;
+        right: 0px;
+        position: relative;
+        width: 125%;
+        max-width: 200px;
+        height: 110px;
+    }
+    .asucm {
+        left: 10px;
+        top: 175px;
+        position: relative;
+        width: 120%;
+        max-width: 230px;
+        height: 150px;   
+    }
+    .password { /* 1 password logo position & size */
+        left: 0px;
+        top: 40px;
+        position: relative;
+        width: 100%;
+        max-width: 175px;
+        height: 25px;   
+    }
+    .stickeryou {
+        bottom: 215px;
+        position: relative;
+        left: 150px;
+        width: 175%;
+        height: 125px;
+    }
+    .makeschool {
+        bottom: 60px;
+        position: relative;
+        left: 180px;
+        width: 300%;
+        max-width: 400px;
+        height: 150px;
+    }
+    .sketch { /* sketch position & size*/
+        top: 150px;
+        position: relative;
+        left: 20px;
+        width: 200%;
+        max-width: 180px;
+        height: 125px;
+    }
+    .balsamiq {
+        top: 155px;
+        position: relative;
+        left: -50px;
+        width: 120%;
+        max-width: 250px;
+        height: 80px;
+    }
+    
+    .jetbrains {
+        bottom: 100px;
+        position: relative;
+        left: 40px;
+        width: 100%;
+        max-width: 125px;
+        height: 125px;
+    }
+    
+    
+    .App-Sponsors { /* background color */
+        background-color:#2a2834 
+    }
+    .right { /* Title - (Sponsors) styling */
+        text-align: center;
+        border-bottom: solid;
+        border-color: rgb(209, 104, 5);
+        border-radius: 5px;
+        border-bottom-width: 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-end-end-radius: 2px;
+        border-top-left-radius: 2px;
+        border-top-right-radius: 5px;
+        line-height: 50px;
+    
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    .sponsoring { /* entire icons styling */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 12.5px;
+        padding-right: 12.5px;
+        min-height: 8vh;
+        border: 0;
+    }
+    .column { /* top icons position & size*/
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    .middle { /* top icons position & size*/
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    .bottom { /* top icons position & size*/
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+        margin-right: 10px;
+    }
+    .row::after { /* row display */
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
