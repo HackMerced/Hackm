@@ -4,7 +4,7 @@ import './Schedule.css'
 class Schedule extends React.Component {
   render() {
     return (
-      <article>
+      <div id="Schedule-Title">
         <h1>Event Schedule</h1>
         <div>
           <table id="schedule">
@@ -75,7 +75,7 @@ class Schedule extends React.Component {
             </tr>
           </table>
         </div>
-      </article>
+      </div>
     );
   }
 }
