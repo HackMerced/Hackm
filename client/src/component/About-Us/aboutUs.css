@@ -1,0 +1,19 @@
+.App-AboutUs {
+  background-color: #282c40;
+  color: white;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  text-align: center;
+}
+
+.AboutUs-info h3{
+	color: orange;
+}
+
+.AboutUs-goal h3{
+	color: orange;
+}

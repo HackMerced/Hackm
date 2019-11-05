@@ -1,10 +1,12 @@
 import React from 'react'
 import logo from '../../logo.svg';
 import './home.css'; //import css for this page
+import AboutUs from '../../component/About-Us/AboutUs.jsx'
 
 class Home extends React.Component {   // This page is the exact same page as the original example
   render() {
     return (
+      <div>
       <article className="Home">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -20,6 +22,10 @@ class Home extends React.Component {   // This page is the exact same page as th
             Learn React
           </a>
       </article>
+      <React.Fragment>    {/* This allows children, and removal of unnecessary <div> wrapper */}
+        <AboutUs />
+    </React.Fragment>
+    </div>
       );
   }
 }
