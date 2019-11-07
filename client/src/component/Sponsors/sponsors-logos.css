@@ -1,9 +1,9 @@
 .digitalocean  {
-    left: 270px;
+    left: 250px;
     bottom: 235px;
     position: relative;
     width: 100%;
-    max-width: 225px;
+    max-width: 235px;
     height: 225px;
 
 }
@@ -31,45 +31,51 @@
     height: 40px;   
 }
 .stickeryou {
-    bottom: 180px;
+    bottom: 250px;
     position: relative;
-    right: 260px;
+    right: 120px;
     width: 240%;
     max-width: 250px;
     height: 150px;
 }
 .makeschool {
-    bottom: 150px;
+    bottom: 215px;
     position: relative;
-    left: 370px;
+    left: 500px;
     width: 300%;
     max-width: 400px;
     height: 150px;
 }
 .sketch { /* sketch position & size*/
-    top: 50px;
+    top: 70px;
     position: relative;
-    right: 0px;
+    right: 70px;
     width: 200%;
-    max-width: 280px;
+    max-width: 310px;
     height: 125px;
 }
 .balsamiq {
-    bottom: 75px;
+    bottom: 40px;
     position: relative;
-    left: 300px;
+    left: 270px;
     width: 100%;
-    max-width: 200px;
-    height: 115px;
+    max-width: 220px;
+    height: 80px;
 }
 
 .jetbrains {
-    bottom: 270px;
+    bottom: 205px;
     position: relative;
-    right: 10px;
     width: 100%;
-    max-width: 175px;
-    height: 200px;
+    max-width: 170px;
+    height: 190px;
+}
+.mlh  {
+    width: 100%;
+    max-width: 300px;;
+    bottom: 70px;
+    left: 110px;
+    position: relative;
 }
 
 
@@ -111,12 +117,14 @@
     float: left;
     width: 33.33%;
     padding: 5px;
+    position: block;
     margin-right: 10px;
 }
 .bottom { /* top icons position & size*/
     float: left;
     width: 33.33%;
     padding: 5px;
+    position: block;
     margin-right: 10px;
 }
 .row::after { /* row display */
@@ -124,6 +132,7 @@
     clear: both;
     display: table;
   }
+ 
 
 
     
@@ -161,29 +170,30 @@
         left: 0px;
         top: 40px;
         position: relative;
-        width: 100%;
-        max-width: 175px;
+        width: 150%;
+        max-width: 155px;
         height: 25px;   
     }
     .stickeryou {
-        bottom: 215px;
+        bottom: 315px;
         position: relative;
-        left: 150px;
-        width: 175%;
+        left: 180px;
+        max-width: 350%;
+        width: 300px;
         height: 125px;
     }
     .makeschool {
-        bottom: 60px;
+        bottom: 30px;
         position: relative;
         left: 180px;
-        width: 300%;
-        max-width: 400px;
+        width: 450%;
+        max-width: 500px;
         height: 150px;
     }
     .sketch { /* sketch position & size*/
         top: 150px;
         position: relative;
-        left: 20px;
+        left: 40px;
         width: 200%;
         max-width: 180px;
         height: 125px;
@@ -191,8 +201,8 @@
     .balsamiq {
         top: 155px;
         position: relative;
-        left: -50px;
-        width: 120%;
+        left: -150px;
+        width: 150%;
         max-width: 250px;
         height: 80px;
     }
@@ -200,10 +210,17 @@
     .jetbrains {
         bottom: 100px;
         position: relative;
-        left: 40px;
+        right: 100px;
         width: 100%;
         max-width: 125px;
         height: 125px;
+    }
+    .mlh  {
+        width: 100%;
+        max-width: 150px;;
+        bottom: 30px;
+        left: 100px;
+        position: relative;
     }
     
     
@@ -259,3 +276,4 @@
         display: table;
       }
     }
+ 

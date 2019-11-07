@@ -9,6 +9,7 @@ import balsamiq from "../../assests/balsamiq-logo-noborder-print.png";
 import stickeryou from "../../assests/stickeryou_logo.png";
 import jetbrains from "../../assests/jetbrains.png";
 import makeschool from "../../assests/makeschool_logo.png";
+import mlh from "../../assests/mlh-logo-white.png";
 //inserted images by moving from file to file
 
 class Sponsors extends React.Component {
@@ -40,10 +41,12 @@ class Sponsors extends React.Component {
             </div>
 
             <div className = "2row"> {/*bottom row for the display*/}
+            <div className = "middle">
                 <div className= "password">
             <a href= "https://1password.com/" > {/*goes to 1 password site*/}
                 <img className= "password" src = {password} alt="1Password"/> {/*1 paswword logo and link*/}
                 </a>
+                </div>
                 
                 <div className = "middle">
                     <a href = "https://www.makeschool.com/">
@@ -58,9 +61,11 @@ class Sponsors extends React.Component {
                 </div>
             
                 <div className= "3row">
+                <div className = "bottom">
             <a href = "https://www.sketch.com/"> {/*goes to sketch site*/}
                  <img className = "sketch" src = {sketch} alt="Sketch" /> {/*Sketch logo and link*/}
             </a>
+                </div>
                
                  <div className = "bottom">
                 <a href = "https://balsamiq.com/">
@@ -73,6 +78,12 @@ class Sponsors extends React.Component {
                         <img className = "jetbrains" src = {jetbrains} alt = "Jetbrains" />
                     </a>
                 </div>
+                </div>
+                
+                <div className = "mlh">
+                    <a href = "https://mlh.io/">
+                        <img className = "mlh" src = {mlh} alt = "Major League Hacking" />
+                    </a>
                 </div>
                       
                     </div>       
