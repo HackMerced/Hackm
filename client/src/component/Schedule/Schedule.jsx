@@ -35,6 +35,7 @@ class Schedule extends React.Component {
             <tr>
               <td>Closing Ceremony</td>
               <td>9:00 PM - 10:00 PM</td>
+            </tr>
           </table>
         </div>
       </div>
