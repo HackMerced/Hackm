@@ -1,8 +1,18 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css'
-import './Title.css'
+import 'font-awesome/css/font-awesome.min.css';
+import './Title.css';
+import axios from 'axios';
 
 class Title extends React.Component {
+
+      state = {
+    name: '',
+  }
+
+    handleChange = event => {
+    this.setState({ name: event.target.value });
+  }
+  
     render() {
         return (
             <article className="App-title" id="Title">
@@ -19,9 +29,9 @@ class Title extends React.Component {
                     <div id="popup1" class="overlay">
                         <div class="popup">
                             <h2>Join our E-Mail list</h2>
-                            <form>
-                                <input type="text" id="name" placeholder="Your Name"></input>
-                                <input type="text" id="email" placeholder="Email"></input>
+                            <form onSubmit={this.handleSubmit}>
+                                <input type="text" id="name" placeholder="Your Name" onChange={this.handleChange}></input>
+                                <input type="text" id="email" placeholder="Email" onChange={this.handleChange}></input>
                                 <button type="submit" id="sendEmail">submit</button>
                             </form>
                             <a class="close" href="#">&times;</a>
