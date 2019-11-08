@@ -31,7 +31,7 @@
     height: 40px;   
 }
 .stickeryou {
-    bottom: 250px;
+    bottom: 240px;
     position: relative;
     right: 120px;
     width: 240%;
@@ -73,8 +73,8 @@
 .mlh  {
     width: 100%;
     max-width: 300px;;
-    bottom: 70px;
-    left: 110px;
+    top: 20px;
+    right: 50px;
     position: relative;
 }
 
@@ -82,7 +82,7 @@
 .App-Sponsors { /* background color */
     background-color:#2a2834 
 }
-.right { /* Title - (Sponsors) styling */
+.Sponsor-right { /* Title - (Sponsors) styling */
     text-align: center;
     border-bottom: solid;
     border-color: rgb(209, 104, 5);
@@ -107,27 +107,27 @@
     min-height: 8vh;
     border: 0;
 }
-.top { /* top icons position & size*/
+.Sponsor-top { /* top icons position & size*/
     float: left;
     width: 33.33%;
     padding: 5px;
     margin-right: 10px;
 }
-.middle { /* top icons position & size*/
-    float: left;
-    width: 33.33%;
-    padding: 5px;
-    position: block;
-    margin-right: 10px;
-}
-.bottom { /* top icons position & size*/
+.Sponsor-middle { /* top icons position & size*/
     float: left;
     width: 33.33%;
     padding: 5px;
     position: block;
     margin-right: 10px;
 }
-.row::after { /* row display */
+.Sponsor-bottom { /* top icons position & size*/
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    position: block;
+    margin-right: 10px;
+}
+.Sponsor-row::after { /* row display */
     content: "";
     clear: both;
     display: table;
@@ -142,8 +142,8 @@
     
       /* Styles */
       .digitalocean  {
-        left: 50px;
-        bottom: 15px;
+        left: 200px;
+        bottom: 140px;
         position: relative;
         width: 125%;
         max-width: 200px;
@@ -151,57 +151,57 @@
     
     }
     .roche { 
-        bottom: 175px;
-        right: 0px;
+        bottom: 125px;
+        right: 125px;
         position: relative;
         width: 125%;
         max-width: 200px;
         height: 110px;
     }
     .asucm {
-        left: 10px;
-        top: 175px;
+        left: 15px;
+        top: 165px;
         position: relative;
-        width: 120%;
-        max-width: 230px;
-        height: 150px;   
+        width: 110%;
+        max-width: 150px;
+        height: 125px;   
     }
     .password { /* 1 password logo position & size */
-        left: 0px;
-        top: 40px;
+        left: 5px;
+        top: 30px;
         position: relative;
         width: 150%;
         max-width: 155px;
         height: 25px;   
     }
     .stickeryou {
-        bottom: 315px;
+        bottom: 325px;
         position: relative;
-        left: 180px;
-        max-width: 350%;
+        left: 200px;
+        max-width: 325%;
         width: 300px;
         height: 125px;
     }
     .makeschool {
         bottom: 30px;
         position: relative;
-        left: 180px;
-        width: 450%;
+        left: 175px;
+        width: 480%;
         max-width: 500px;
         height: 150px;
     }
     .sketch { /* sketch position & size*/
         top: 150px;
         position: relative;
-        left: 40px;
-        width: 200%;
-        max-width: 180px;
+        left: 35px;
+        width: 250%;
+        max-width: 195px;
         height: 125px;
     }
     .balsamiq {
-        top: 155px;
+        top: 150px;
         position: relative;
-        left: -150px;
+        left: -135px;
         width: 150%;
         max-width: 250px;
         height: 80px;
@@ -215,11 +215,11 @@
         max-width: 125px;
         height: 125px;
     }
-    .mlh  {
+    .Sponsor-mlh  {
         width: 100%;
         max-width: 150px;;
-        bottom: 30px;
-        left: 100px;
+        bottom: 90px;
+        left: 250px;
         position: relative;
     }
     
@@ -227,7 +227,7 @@
     .App-Sponsors { /* background color */
         background-color:#2a2834 
     }
-    .right { /* Title - (Sponsors) styling */
+    .Sponsor-right { /* Title - (Sponsors) styling */
         text-align: center;
         border-bottom: solid;
         border-color: rgb(209, 104, 5);
@@ -252,25 +252,25 @@
         min-height: 8vh;
         border: 0;
     }
-    .column { /* top icons position & size*/
+    .Sponsor-column { /* top icons position & size*/
         float: left;
         width: 33.33%;
         padding: 5px;
         margin-right: 10px;
     }
-    .middle { /* top icons position & size*/
+    .Sponsor-middle { /* top icons position & size*/
         float: left;
         width: 33.33%;
         padding: 5px;
         margin-right: 10px;
     }
-    .bottom { /* top icons position & size*/
+    .Sponsor-bottom { /* top icons position & size*/
         float: left;
         width: 33.33%;
         padding: 5px;
         margin-right: 10px;
     }
-    .row::after { /* row display */
+    .Sponsor-row::after { /* row display */
         content: "";
         clear: both;
         display: table;
