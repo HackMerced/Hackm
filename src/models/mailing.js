@@ -17,7 +17,6 @@ const mailingSchema = new mongoose.Schema({
     alias: "Their Name",
     required: [true, "Users's name is required!"],
     lowercase: true,
-    minlength: 3,
   },
   email: {
     type: String,
@@ -25,7 +24,6 @@ const mailingSchema = new mongoose.Schema({
     match: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     required: [true, "Users's email is required!"],
     lowercase: true,
-    minlength: 7,
   }
 });
 

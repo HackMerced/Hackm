@@ -25,8 +25,18 @@ constructor(props) {
     });
   }
     handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.name + ' at this email ' + this.state.email);
-    event.preventDefault();
+    axios({
+      method: 'post',
+      url: 'http://localhost:3852/api/mailing',
+      data: {
+        "name": this.state.name,
+        "email": this.state.email
+        }
+    }).then((response) => {
+    console.log(response);
+    }, (error) => {
+    console.log(error);
+});
   }
   
     render() {
