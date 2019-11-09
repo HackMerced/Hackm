@@ -1,11 +1,12 @@
-const mailing = require('express').Router();
+const router = require('express').Router();
+const Mailing = require('../models').models.Mailing;
 /*
 mailing.get('/mailing/:id', async (req, res) => { });
 mailing.get('/mailing', async (req, res) => { res.send('mailing') });
 mailing.post('/mailing/:id', async (req, res) => { });
 */
 
-
+router.get('/mailing', async (req, res) => { res.send('hello world') });
 /**
  * @api {post} /api/mailing Add new Mailers(s)
  * @apiDescription Adds an array of new mailers(s)
@@ -24,11 +25,11 @@ mailing.post('/mailing/:id', async (req, res) => { });
  */
 
 router.post("/mailing", async (req, res) => {
-  Attendee.findOne({ email: req.body.email }).then(user => {
+  Mailing.findOne({ email: req.body.email }).then(user => {
     if (user) {
       return res.status(400).json({ email: "Email already exists" });
     } else {
-      Attendee.insertMany(req.body, (error, docs) => {
+      Mailing.insertMany(req.body, (error, docs) => {
         if (error) {
           res.send(error);
         }
@@ -41,4 +42,4 @@ router.post("/mailing", async (req, res) => {
   });
 });
 
-module.exports = mailing;
+module.exports = router;

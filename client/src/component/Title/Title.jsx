@@ -4,13 +4,29 @@ import './Title.css';
 import axios from 'axios';
 
 class Title extends React.Component {
+constructor(props) {
+    super(props);
+    this.state = {
+        name: '',
+        email: ''
+        };
 
-      state = {
-    name: '',
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-    handleChange = event => {
-    this.setState({ name: event.target.value });
+    handleChange(event) {
+    const target = event.target;
+    const value = target.value;
+    const object = target.name;
+
+    this.setState({
+      [object]: value
+    });
+  }
+    handleSubmit(event) {
+    alert('A name was submitted: ' + this.state.name + ' at this email ' + this.state.email);
+    event.preventDefault();
   }
   
     render() {
@@ -30,9 +46,9 @@ class Title extends React.Component {
                         <div class="popup">
                             <h2>Join our E-Mail list</h2>
                             <form onSubmit={this.handleSubmit}>
-                                <input type="text" id="name" placeholder="Your Name" onChange={this.handleChange}></input>
-                                <input type="text" id="email" placeholder="Email" onChange={this.handleChange}></input>
-                                <button type="submit" id="sendEmail">submit</button>
+                                <input type="text" name="name" placeholder="Your Name" value={this.state.value} onChange={this.handleChange}></input>
+                                <input type="text" name="email" placeholder="Email" value={this.state.value} onChange={this.handleChange} ></input>
+                                <button type="submit" a="sendEmail">submit</button>
                             </form>
                             <a class="close" href="#">&times;</a>
 
