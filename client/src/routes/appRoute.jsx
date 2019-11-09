@@ -1,11 +1,12 @@
-import login from '../pages/login/mainLogin/login.jsx'
-import signUp from '../pages/signUp/signUp.jsx'
-import Home from '../pages/home/home.jsx'
-import adminDash from '../pages/login/adminDash/admin.jsx'
-import applicantDash from '../pages/login/applicantDash/applicant.jsx'
-import judgingDash from '../pages/login/judgingDash/judging.jsx'
-import volDash from '../pages/login/volDash/volDash.jsx'
-import events from '../pages/events/Events.jsx'
+import login from '../pages/login/mainLogin/login'
+import signUp from '../pages/signUp/signUp'
+import Home from '../pages/home/home'
+import adminDash from '../pages/login/adminDash/admin'
+import applicantDash from '../pages/login/applicantDash/applicant'
+import judgingDash from '../pages/login/judgingDash/judging'
+import volDash from '../pages/login/volDash/volDash'
+import events from '../pages/events/Events'
+import NeonHeart from '../pages/NeonHeart/heart';
 
 const routes = [ 			// JSON array of objects having characteristics of respective components and paths
 {				 			// This is how the app is pulling the routing data dynamically
@@ -40,6 +41,10 @@ const routes = [ 			// JSON array of objects having characteristics of respectiv
 {
 	path: '/volunteer',
 	component: volDash,
+},
+{
+	path: '/neon',
+	component: NeonHeart,
 }
 ];
 
