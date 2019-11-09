@@ -4,9 +4,9 @@ import "./heart.css";
 class NeonHeart extends React.Component {
   componentDidMount() {
     /*
-    * Credits to al-ro
-    * https://codepen.io/al-ro/pen/BaaBage
-    */
+     * Credits to al-ro
+     * https://codepen.io/al-ro/pen/BaaBage
+     */
     var canvas = document.getElementById("canvas");
 
     canvas.width = window.innerWidth;
@@ -290,7 +290,11 @@ class NeonHeart extends React.Component {
   }
 
   render() {
-    return <canvas id="canvas" width="1400" height="600"></canvas>;
+    return (
+      <div id="heart">
+        <canvas id="canvas" width="1400" height="600"></canvas>
+      </div>
+    );
   }
 }
 
