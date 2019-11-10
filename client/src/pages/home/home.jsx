@@ -7,16 +7,10 @@ import ContactUs from '../../component/contact-us/Contact-Us.jsx'
 class Home extends React.Component {   // This page is the exact same page as the original example
   render() {
     return (
-      <div>
-      <article className="Home">
         <React.Fragment>    {/* This allows children, and removal of unnecessary <div> wrapper */}
           <Title />
+          <ContactUs />
       </React.Fragment>
-      </article>
-      <div>
-        <ContactUs />
-      </div>
-      </div>
       );
   }
 }
