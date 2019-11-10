@@ -8,12 +8,11 @@ class Home extends React.Component {
   // This page is the exact same page as the original example
   render() {
     return (
-      <article className="Home">
         <React.Fragment>    {/* This allows children, and removal of unnecessary <div> wrapper */}
           <Title />
         <Schedule />
       </React.Fragment>
-      </article>
+    )
   }
 }
 export default Home;
