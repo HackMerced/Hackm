@@ -1,10 +1,6 @@
-
-
 import React from "react";
 import 'font-awesome/css/font-awesome.min.css'
-import './FAQ.css'
-
-
+import './faq.css'
 
 const Faqs = () => (
   <div className="Faqs" id="Faqs">
@@ -12,7 +8,7 @@ const Faqs = () => (
         <u>FREQUENTLY ASKED QUESTIONS</u>
       </h2>
       <div className="container">
-        <div className="column left">
+        <div className="column-left">
           <div className="question">
             <h3>Who can attend?</h3>
             <p>
@@ -60,7 +56,7 @@ const Faqs = () => (
             </p>
           </div>
         </div>
-        <div className="column right">
+        <div className="column-left">
           <div className="question">
             <h3>What if I have no coding background?</h3>
             <p>

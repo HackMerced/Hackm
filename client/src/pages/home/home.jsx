@@ -1,5 +1,4 @@
 import React from 'react'
-import View from 'react-view-component/lib/View';
 import logo from '../../logo.svg';
 import FAQ from '../../component/FAQ/FAQ.jsx';
 import './home.css'; //import css for this page
@@ -8,10 +7,6 @@ import './home.css'; //import css for this page
 class Home extends React.Component {   // This page is the exact same page as the original example
   render() {
     return (
-      <View style={{flex: 1}}> 
-      <div>
-         <FAQ />
-      </div>
       <article className="Home">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -25,8 +20,10 @@ class Home extends React.Component {   // This page is the exact same page as th
           >
             Learn React
           </a>
+          <div>
+            <FAQ />
+          </div>
       </article>
-      </View>
       );
   }
 }
