@@ -9,25 +9,21 @@ class ContactUs extends React.Component {
                     <h2>Contact US</h2>
                     </section>
                     <main>
-                        <form>
-                             <section className="name">          {/*name Section */}
+                        <form action="mailto:someone@example.com" method="GET">
+                             <section className="contact-name">          {/*name Section */}
                                 <p>First and Last Name</p>
                             </section>
-                             <input type="text" style={{width:200}} name="name"></input>         {/*first and last name */}
-                        </form>
-
-                        <form>
-                             <section className="email">          {/*email Section */}
+                             <input type="text" style={{width:200}} name="subject"></input>         {/*first and last name */}
+                             <section className="contact-email">          {/*email Section */}
                                 <p>Your E-Mail Please:</p>
                             </section>
                              <input type="text" style={{width:200}} name="email"></input>         {/*email section */}
-                        </form>
-
-                        <form>
-                             <section className="message">          {/*email Section */}
+                             <section className="contact-message">          {/*email Section */}
                                 <p>Your Message:</p>
                             </section>
-                             <textarea style={{width:400, height:150}} name ="message"></textarea>      {/*email section */}
+                             <textarea style={{width:400, height:150}} name ="body"></textarea>      {/*email section */}
+                             <br></br>
+                             <input type="submit" value="Send"></input>
                         </form>
 
 
