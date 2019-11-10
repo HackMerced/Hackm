@@ -4,6 +4,7 @@ import './home.css'; //import css for this page
 import Title from '../../component/Title/Title.jsx'
 import Sponsors from '../../component/Sponsors/sponsors-logos';
 
+
 class Home extends React.Component {   // This page is the exact same page as the original example
   render() {
     return (
