@@ -8,12 +8,10 @@ class Home extends React.Component {   // This page is the exact same page as th
   render() {
     return (
       <div>
-      <article className="Home">
         <React.Fragment>    {/* This allows children, and removal of unnecessary <div> wrapper */}
           <Title />
+          <Sponsors/>
       </React.Fragment>
-      </article>
-      <Sponsors/>
       </div>
       );
   }
