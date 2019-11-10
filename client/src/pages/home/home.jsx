@@ -6,11 +6,11 @@ import Title from '../../component/Title/Title.jsx'
 class Home extends React.Component {   // This page is the exact same page as the original example
   render() {
     return (
-      <article className="Home">
-        <React.Fragment>    {/* This allows children, and removal of unnecessary <div> wrapper */}
-          <Title />
+      <div>
+      <React.Fragment>
+        <Title />
       </React.Fragment>
-      </article>
+      </div>
       );
   }
 }
