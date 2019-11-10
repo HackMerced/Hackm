@@ -1,13 +1,18 @@
-name: HackMerced CI
+name: HackMerced Build CI
 
 on: 
-  push:
+  pull_request:
     # Sequence of patterns matched against refs/heads
     branches:
       - 'feature/*' # Push events to branches matching refs/heads/feature/*
+      - 'actions/*' # Push events to branches matching refs/heads/actions/*
+      - 'develop' # Push events to branches matching refs/heads/develop
+      - 'master' # Push events to branches matching refs/heads/master
+
     # Sequence of patterns matched against refs/tags
     tags:
-      - v0 # Push events to v0 tag
+      - v0.x # Push events to v0.x tags
+      - v1.x # Push events to v1.x tags
 
 jobs:
   build:
@@ -16,19 +21,25 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [10.x, 11.x, 12.x]
         os: [ubuntu-latest, windows-latest, macOS-latest]
 
     steps:
     - name: Checkout to current branch
-      uses: actions/checkout@v0
+      uses: actions/checkout
+
     - name: Configure Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v0
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
-      run: |
-        yarn setup
-        yarn start
+
+    - name: Setup 
       env:
+        NODE_ENV: ${{ secrets.NODE_ENV }}
+        PORT: ${{ secrets.PORT }}
+        MONGO_URI_TESTS: ${{ secrets.MONGO_URI_TESTS }}
         CI: true
+      run: |
+        ls -l
+        echo 'Running Setup...'
+        yarn setup
