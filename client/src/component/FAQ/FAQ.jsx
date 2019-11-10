@@ -5,7 +5,7 @@ import './faq.css'
 const Faqs = () => (
   <div className="Faqs" id="Faqs">
       <h2>
-        <u>FREQUENTLY ASKED QUESTIONS</u>
+        <u>Frequently Asked Questions</u>
       </h2>
       <div className="container">
         <div className="column-left">
