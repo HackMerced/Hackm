@@ -3,7 +3,7 @@
   <h1 align="center">HackMerced V</h1>
 </p>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors)
 [![CircleCI](https://circleci.com/gh/HackMerced/HackMerced-V.svg?style=svg)](https://circleci.com/gh/HackMerced/HackMerced-V)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2901/badge)](https://bestpractices.coreinfrastructure.org/projects/2901)
 ![GitHub issues](https://img.shields.io/github/issues-raw/HackMerced/HackMerced-V.svg?style=plastic)
@@ -45,10 +45,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- prettier-ignore -->
 <table>
   <tr>
-    <td align="center"><a href="http://linkedin.com/in/adriandarian/"><img src="https://avatars0.githubusercontent.com/u/23567187?v=4" width="100px;" alt="Adrian Darian"/><br /><sub><b>Adrian Darian</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=shiv248" title="Code">💻</a><a href="#review-adriandarian" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-adriandarian" title="Project Management">📆</a></td>
+    <td align="center"><a href="http://linkedin.com/in/adriandarian/"><img src="https://avatars0.githubusercontent.com/u/23567187?v=4" width="100px;" alt="Adrian Darian"/><br /><sub><b>Adrian Darian</b></sub></a><br /><a href="#review-adriandarian" title="Reviewed Pull Requests">👀</a> <a href="#projectManagement-adriandarian" title="Project Management">📆</a></td>
     <td align="center"><a href="http://shivgupta.xyz"><img src="https://avatars3.githubusercontent.com/u/15200155?v=4" width="100px;" alt="Shiv Gupta"/><br /><sub><b>Shiv Gupta</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=shiv248" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/AndrewCNg24"><img src="https://avatars3.githubusercontent.com/u/50030044?v=4" width="100px;" alt="Andrew Ng"/><br /><sub><b>Andrew Ng</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=AndrewCNg24" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/tuwZy58"><img src="https://avatars2.githubusercontent.com/u/51281084?v=4" width="100px;" alt="tuwZy58"/><br /><sub><b>tuwZy58</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=tuwZy58" title="Code">💻</a></td>
+    <td align="center"><a href="http://linkedin.com/in/maryfrancine"><img src="https://avatars0.githubusercontent.com/u/55856581?v=4" width="100px;" alt="Mary Francine Delos Reyes"/><br /><sub><b>Mary Francine Delos Reyes</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=maryharebear" title="Code">💻</a></td>
   </tr>
 </table>
 
