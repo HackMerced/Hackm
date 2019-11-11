@@ -1,42 +1,40 @@
 import React from "react";
-import './Schedule.css'
+import "./Schedule.css";
 
 class Schedule extends React.Component {
   render() {
     return (
-      <div id="Schedule-Title">
-        <h1>Event Schedule</h1>
-        <div>
-          <table id="schedule">
-            <tr>
-              <th>Event</th>
-              <th>Time</th>
-            </tr>
-            <tr>
-              <td>Opening Ceremony</td>
-              <td>8:00 AM</td>
-            </tr>
-            <tr>
-              <td>Hacking Begins</td>
-              <td>9:00 AM</td>
-            </tr>
-            <tr>
-              <td>Lunch</td>
-              <td>12:00 AM</td>
-            </tr>
-            <tr>
-              <td>Dinner</td>
-              <td>5:00 PM</td>
-            </tr>
-            <tr>
-              <td>Hacking Ends</td>
-              <td>9:00 PM</td>
-            </tr>
-            <tr>
-              <td>Closing Ceremony</td>
-              <td>9:00 PM - 10:00 PM</td>
-            </tr>
-          </table>
+      <div id="grad">
+        <div id="Schedule-Title">
+          <h1>Schedule</h1>
+          <div id="Schedule-Body">
+            <table id="Schedule">
+              <tr>
+                <td>8:00 - 9:00</td>
+                <td>-- Opening Ceremony</td>
+              </tr>
+              <tr>
+                <td>9:00 - 9:30</td>
+                <td>-- Hacking Begins</td>
+              </tr>
+              <tr>
+                <td>12:00 - 1:00</td>
+                <td>-- Lunch</td>
+              </tr>
+              <tr>
+                <td>5:00 - 6:00</td>
+                <td>-- Dinner</td>
+              </tr>
+              <tr>
+                <td>9:00 - 9:30</td>
+                <td>-- Hacking Ends</td>
+              </tr>
+              <tr>
+                <td>9:00 - 10:00</td>
+                <td>-- Closing Ceremony</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     );
