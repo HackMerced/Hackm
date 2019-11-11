@@ -1,15 +1,15 @@
 import React from 'react';
 import './sponsors-logos.css';
 import ASUCM from "../../assests/asucm_logo.png";
-import password from "../../assests/dotcom white mono.png";
-import DigitalOcean from "../../assests/DO_Logo_Vertical_White.png";
-import sketch from "../../assests/sketch-logo-dark-transparent@2x.png";
+import password from "../../assests/1password.png";
+import DigitalOcean from "../../assests/DigitalOcean_logo.svg.png";
+import sketch from "../../assests/Sketch.png";
 import roche from "../../assests/Roche_Logo.svg";
 import balsamiq from "../../assests/balsamiq-logo-noborder-print.png";
 import stickeryou from "../../assests/stickeryou_logo.png";
 import jetbrains from "../../assests/jetbrains.png";
 import makeschool from "../../assests/makeschool_logo.png";
-import mlh from "../../assests/mlh-logo-white.png";
+import mlh from "../../assests/mlh-logo-color.png";
 //inserted images by moving from file to file
 
 class Sponsors extends React.Component {
@@ -17,9 +17,10 @@ class Sponsors extends React.Component {
         return( 
             <article className = "App-Sponsors" id= "Sponsors">
                  <div className="sponsoring"> {/*sponsoring section*/}
-                <font size = "6" color ="white" > {/* title of Sponsors*/}
+                <font size = "6" color ="#997080" > {/* title of Sponsors*/}
               <p class = "Sponsor-right"> SPONSORS </p>
                 </font>
+                <br></br>
 
             <div className = "Sponsor-row"> {/*made a row for the display*/}
                 <div className="column"> {/*named it column instead of top*/}
@@ -30,6 +31,7 @@ class Sponsors extends React.Component {
             <div className = "Sponsor-top">
             <a href = "https://digitalocean.com/"> {/*goes to digital ocean site*/}
                  <img className = "digitalocean" src={DigitalOcean} alt="Digital Ocean" /> {/*Digital Ocean logo and link*/}
+
             </a>
             </div>
 
