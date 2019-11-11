@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../../logo.svg';
 import FAQ from '../../component/FAQ/FAQ.jsx';
 import './home.css'; //import css for this page
+import AboutUs from '../../component/About-Us/AboutUs.jsx'
 import Title from '../../component/Title/Title.jsx'
 import Sponsors from '../../component/Sponsors/sponsors-logos';
 
@@ -16,6 +17,7 @@ class Home extends React.Component {
           <Title />
           <Schedule />
           <FAQ />
+          <AboutUs />
           <Sponsors/>
       </React.Fragment>
       </div>
