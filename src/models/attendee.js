@@ -82,12 +82,7 @@ const attendeeSchema = new mongoose.Schema({
     enum: [
       "male",
       "female",
-      "lesbian",
-      "gay",
-      "bisexual",
-      "transgender",
-      "queer",
-      "other"
+      "other",
     ],
     required: [true, "Attendee's Gender is required"],
   },
