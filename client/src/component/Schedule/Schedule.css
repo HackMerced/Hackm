@@ -1,9 +1,9 @@
 #grad {
-  background-image: linear-gradient(#A8B6D6,#E7D9D2);
+  background-image: linear-gradient(rgb(168, 182, 214),rgb(231, 217, 210));
 }
 
 #Schedule-Title h1{
-  background-color: #B996A4;
+  background-color: #b996a4;
   font-size: 50px;
   margin: 0%;
   width: 65.4%;
