@@ -5,7 +5,7 @@ import axios from 'axios';
 
 console.log('before Axios')
 
-axios.get('http://localhost:3852/api/hackers')
+axios.get('http://localhost:3852/api/attendee')
 	.then((res) => {
 		console.log(res);
 	})
