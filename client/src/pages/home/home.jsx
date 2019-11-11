@@ -1,10 +1,11 @@
 import React from 'react'
-import logo from '../../logo.svg';
 import FAQ from '../../component/FAQ/FAQ.jsx';
-import './home.css'; //import css for this page
-import AboutUs from '../../component/About-Us/AboutUs.jsx'
-import Title from '../../component/Title/Title.jsx'
+import AboutUs from '../../component/About-Us/AboutUs'
+import Title from '../../component/Title/Title'
+import Schedule from '../../component/Schedule/Schedule'
 import Sponsors from '../../component/Sponsors/sponsors-logos';
+
+import './home.css'; // import css for this page
 
 
 
