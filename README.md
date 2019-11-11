@@ -3,7 +3,7 @@
   <h1 align="center">HackMerced V</h1>
 </p>
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
 [![CircleCI](https://circleci.com/gh/HackMerced/HackMerced-V.svg?style=svg)](https://circleci.com/gh/HackMerced/HackMerced-V)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2901/badge)](https://bestpractices.coreinfrastructure.org/projects/2901)
 ![GitHub issues](https://img.shields.io/github/issues-raw/HackMerced/HackMerced-V.svg?style=plastic)
@@ -56,6 +56,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/BusherBridi"><img src="https://avatars3.githubusercontent.com/u/44107397?v=4" width="100px;" alt="BusherBridi"/><br /><sub><b>BusherBridi</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=BusherBridi" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/trumanjchan"><img src="https://avatars2.githubusercontent.com/u/43284404?v=4" width="100px;" alt="trumanjchan"/><br /><sub><b>trumanjchan</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=trumanjchan" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/athena-siaotong/"><img src="https://avatars3.githubusercontent.com/u/48605689?v=4" width="100px;" alt="Athena Siaotong"/><br /><sub><b>Athena Siaotong</b></sub></a><br /><a href="#design-athsiao" title="Design">🎨</a></td>
   </tr>
 </table>
 
