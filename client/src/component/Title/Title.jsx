@@ -1,8 +1,7 @@
 import React from 'react';
 import './Title.css';
 import polaroid from './polaroid.png'; // with import
-import PopUp from './PopUp.jsx';
-import axios from 'axios';
+import PopUp from '../Mailing-List';
 
 class Title extends React.Component {
     render() {
