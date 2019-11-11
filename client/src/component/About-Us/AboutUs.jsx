@@ -5,6 +5,7 @@ import './aboutUs.css'
 class AboutUs extends React.Component {
     render() {
         return (
+          <div id="pinkbackground">
             <article className="App-AboutUs" id="about-us">
                 <div className="text">
                   <div className="AboutUs-info">
@@ -28,6 +29,7 @@ class AboutUs extends React.Component {
                   </div>
                 </div>
             </article>
+            </div>
         )
     }
 }
