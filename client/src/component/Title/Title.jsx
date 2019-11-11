@@ -1,118 +1,25 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css';
 import './Title.css';
-import axios from 'axios';
+import polaroid from './polaroid.png'; // with import
+import PopUp from '../Mailing-List';
 
 class Title extends React.Component {
-constructor(props) {
-    super(props);
-    this.state = {
-        name: '',
-        email: '',
-        didUserSubmit: false
-        };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-    handleChange(event) {
-    const target = event.target;
-    const value = target.value;
-    const object = target.name;
-
-    this.setState({
-      [object]: value
-    });
-  }
-    handleSubmit(event) {
-
-      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      var email = this.state.email;
-      if(re.test(String(email).toLowerCase())){
-         event.preventDefault();
-            axios({
-              method: 'post',
-              url: 'http://localhost:3852/api/mailing',
-              data: {
-                "name": this.state.name,
-                "email": this.state.email
-                }
-            }).then((response) => {
-            console.log(response);
-            this.setState({
-              didUserSubmit: true
-            });
-            }, (error) => {
-            console.log(error);
-        });
-      }else{
-        event.preventDefault();
-        document.getElementById("isEmailValid").style.display = "block";
-      }
-  }
-  
     render() {
-      const didUserSubmit = this.state.didUserSubmit;
-      if(didUserSubmit){
         return (
             <article className="App-title" id="Title">
-
+            <link href="https://fonts.googleapis.com/css?family=Dosis:300&display=swap" rel="stylesheet"></link>
                 <section className="title-title">
                     {/* Headers */}
-                    <h2>HACKMERCED V</h2>
-                    <h1>February 28th - March 1st 2020</h1>
+                    <h2>hack'm</h2>
+                    <h4>december 7, 2019</h4>
                     {/* popup button trigger */}
-                    <div className="box">
-                        <a class="button" href="#popup1">Join the E-mail list</a>
-                    </div>
-                    </section>
-                    <section>
-                    {/* Inside popup */}
-                    <div id="popup1" class="overlay">
-                        <div class="popup">
-                            <h2>Thank  you {capitalize_Words(this.state.name)} for joining HackMerced's mailing list</h2>
-                            <a class="close" href="#">&times;</a>
-                        </div>
-                    </div>
                 </section>
-            </article>
-        )
-      }else{
-        return (
-            <article className="App-title" id="Title">
-
-                <section className="title-title">
-                    {/* Headers */}
-                    <h2>HACKMERCED V</h2>
-                    <h1>February 28th - March 1st 2020</h1>
-                    {/* popup button trigger */}
-                    <div className="box">
-                        <a class="button" href="#popup1">Join the E-mail list</a>
-                    </div>
-                    </section>
-                    <section>
-                    {/* Inside popup */}
-                    <div id="popup1" className="overlay">
-                        <div class="popup">
-                            <h2>Join our E-Mail list</h2>
-                            <form onSubmit={this.handleSubmit}>
-                                <input type="text" name="name" placeholder="Your Name" value={this.state.value} onChange={this.handleChange}></input>
-                                <input type="text" name="email" placeholder="Email" value={this.state.value} onChange={this.handleChange} ></input>
-                                <button type="submit" a="sendEmail">submit</button>
-                            </form>
-                             <h5 id="isEmailValid" class="isEmailValid">Please enter a valid email</h5>
-                            <a class="close" href="#">&times;</a>
-                        </div>
-                    </div>
-                </section>
+                <img className="title-image" src={polaroid} alt="Italian Trulli"></img>
+                <PopUp />
             </article>
         )
       }
-    }
-}
-function capitalize_Words(str)
-{
- return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-}
+   }
+
+
 export default Title;
