@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom"; //Switch and Route Library
 
 import Footer from './component//Footer/Footer.jsx';
@@ -23,11 +23,12 @@ class App extends Component {
         </Switch>
       </div>
     )
+
     return (
-    <React.Fragment> 		             {/* This allows children, and removal of unnecessary <div> wrapper */}
-      <NavigationBar />              {/* Link to Navigation Bar */}
+    <React.Fragment>
+      <NavigationBar />
       <App />
-      <Footer />	                   {/* Link to Footer.js */}
+      <Footer />
     </React.Fragment>
     );
   }

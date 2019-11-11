@@ -1,47 +1,49 @@
-.App-title { 
-background-color: #E7D9D2;
-height: 125vh;
-width: 89vw;
-background-attachment: fixed;
-padding-left: 130px;
-padding-top: 50px;
-/*additions */
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-font-family: 'Dosis', sans-serif;
+.App-title {
+  background-color: #e7d9d2;
+  height: 125vh;
+  width: 89vw;
+  background-attachment: fixed;
+  padding-left: 130px;
+  padding-top: 50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Dosis", sans-serif;
 }
 
-.title-title{
-  position:relative;
+.title-title {
+  position: relative;
   width: 750px;
-  background: linear-gradient(180deg, rgba(168,182,214,1) 43%, rgba(254,200,213,0.45) 73%, rgba(231,217,210,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(168, 182, 214, 1) 43%,
+    rgba(254, 200, 213, 0.45) 73%,
+    rgba(231, 217, 210, 1) 100%
+  );
   padding-top: 1vh;
-  padding-left:10px;
+  padding-left: 10px;
   color: white;
   font-size: 30px;
   height: 100vh;
   float: left;
-
 }
 
-.title-image{
+.title-image {
   position: absolute;
-  left: 710px;
-  top: 90px;
+  right: 5%;
   width: 40%;
   float: right;
 }
 
-.title-title h2{
-  margin-block-start:10px;
+.title-title h2 {
+  margin-block-start: 10px;
   font-size: 100px;
-  margin-block-end:0px;
+  margin-block-end: 0px;
 }
 
-.title-title h4{
+.title-title h4 {
   font-size: 20px;
-  margin-block-start:0px;
+  margin-block-start: 0px;
   letter-spacing: 5px;
 }

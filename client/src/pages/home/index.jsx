@@ -1,11 +1,12 @@
 import React from "react";
-import FAQ from "../../component/FAQ/FAQ.jsx";
-import AboutUs from "../../component/About-Us/AboutUs";
-import Title from "../../component/Title/Title";
-import Schedule from "../../component/Schedule/Schedule";
-import Sponsors from "../../component/Sponsors/sponsors-logos";
 
-import "./home.css"; // import css for this page
+import Faq from "../../component/FAQ";
+import AboutUs from "../../component/About-Us";
+import Title from "../../component/Title";
+import Schedule from "../../component/Schedule";
+import Sponsors from "../../component/Sponsors";
+
+import "./home.css";
 
 class Home extends React.Component {
   render() {
@@ -14,7 +15,7 @@ class Home extends React.Component {
         <React.Fragment>
           <Title />
           <Schedule />
-          <FAQ />
+          <Faq />
           <AboutUs />
           <Sponsors />
         </React.Fragment>
@@ -22,4 +23,5 @@ class Home extends React.Component {
     );
   }
 }
+
 export default Home;

@@ -1,6 +1,6 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
-import "./FAQ.css";
+import "./faq.css";
 
 const Faqs = () => (
   <div className="Faqs" id="Faqs">
@@ -14,7 +14,7 @@ const Faqs = () => (
           <p>
             All undergraduate and graduate students of any major or high school
             students are welcome! High school students and those under the age
-            of 18 are required to fill out a{" "}
+            of 18 are required to fill out a
             <a
               href="https://risk.ucmerced.edu/sites/risk.ucmerced.edu/files/documents/waiver-voluntary.pdf"
               target="_blank"
@@ -22,8 +22,8 @@ const Faqs = () => (
               style={{ color: "#fff" }}
             >
               liability waiver
-            </a>{" "}
-            and have it sent to{" "}
+            </a>
+            and have it sent to
             <a
               href="mailto:general@hackmerced.com?subject=HackMerced Questions&body=Dear HackMerced,"
               style={{ textDecoration: "none", color: "#D7AA27" }}

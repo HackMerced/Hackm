@@ -1,19 +1,9 @@
-import React from "react";
-import axios from "axios";
+import React, { Component } from "react";
 import { universities } from "../../constants/universities";
 
-import "./signUp.css"; // css for this file
+import "./signUp.css";
 
-axios
-  .get("http://localhost:3852/api/hackers")
-  .then(res => {
-    // console.log(res);
-  })
-  .catch(function(error) {
-    // console.log(error);
-  });
-
-class SignUp extends React.Component {
+class SignUp extends Component {
   constructor(props) {
     super(props);
     this.state = {
