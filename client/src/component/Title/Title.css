@@ -1,117 +1,47 @@
 .App-title { 
-background-image: url("Background.png"); 
-height: 100vh;
-width: 100vw;
+background-color: #E7D9D2;
+height: 125vh;
+width: 89vw;
 background-attachment: fixed;
+padding-left: 130px;
+padding-top: 50px;
 /*additions */
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
+font-family: 'Dosis', sans-serif;
 }
 
-/*styling for popup modal container*/
 .title-title{
-  padding-top: 10vh;
-  text-align: center;
+  position:relative;
+  width: 750px;
+  background: linear-gradient(180deg, rgba(168,182,214,1) 43%, rgba(254,200,213,0.45) 73%, rgba(231,217,210,1) 100%);
+  padding-top: 1vh;
+  padding-left:10px;
   color: white;
-  font-size: 35px;
-}
-
-.isEmailValid{
-  display: none;
-  color: red;
-}
-
-.box {
-  width: 40%;
-  margin: 0 auto;
-  /* background: rgba(255, 255, 255, 0); */
-  padding: 35px;
-  /* border: 2px solid #fff;*/
-  /* border-radius: 20px/50px;  */
-  /* background-clip: padding-box; */
-  text-align: center;
-}
-
-/*styling for popup modal button*/
-
-.button {
-  font-size: 1em;
-  padding: 20px;
-  color: #fff;
-  border: 2px solid #354e75;
-  border-radius: 20px/50px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-
-/*highlighting color when hovering over popup modal button*/
-
-.button:hover {
-  background: #354e75;
-}
-
-/*Styling to dim screen when opening modal*/
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-  overflow: hidden;
-  position:fixed;
-}
-
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-/*styling for the popup*/
-.popup {
-  margin: 100px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-  text-align: center;
-}
-/*popup header*/
-.popup h2 {
-  font-size: 20px;
-  padding: 25px;
-  text-align: center;
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-
-/*closing fade for popup*/
-.popup .close {
-  position: absolute;
-  top: 10px;
-  right: 30px;
-  transition: all 200ms;
   font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+  height: 100vh;
+  float: left;
+
 }
 
-.popup .close:hover {
-  color: #354e75;
+.title-image{
+  position: absolute;
+  left: 710px;
+  top: 90px;
+  width: 40%;
+  float: right;
 }
 
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+.title-title h2{
+  margin-block-start:10px;
+  font-size: 100px;
+  margin-block-end:0px;
+}
+
+.title-title h4{
+  font-size: 20px;
+  margin-block-start:0px;
+  letter-spacing: 5px;
 }
