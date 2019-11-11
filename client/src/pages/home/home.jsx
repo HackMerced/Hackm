@@ -7,8 +7,6 @@ import Sponsors from '../../component/Sponsors/sponsors-logos';
 
 import './home.css'; // import css for this page
 
-
-
 class Home extends React.Component {
   // This page is the exact same page as the original example
   render() {

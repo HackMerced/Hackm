@@ -1,16 +1,36 @@
-import React from 'react';
-import Footer from './component//Footer/Footer.jsx';
-import Main from './component/Main/Main.jsx'
-import NavigationBar from './component/Header/NavigationBar.jsx'
-const App = () => {
-  return (
-    <React.Fragment> 		{/* This allows children, and removal of unnecessary <div> wrapper */}
-      <NavigationBar />
+import React, {Component} from 'react';
+import { Switch, Route } from "react-router-dom"; //Switch and Route Library
 
-      <Main /> 		{/* Link to React Router */}
-      <Footer />	{/* Link to Footer.js */}
+import Footer from './component//Footer/Footer.jsx';
+import NavigationBar from './component/Header/NavigationBar.jsx'
+import Routes from './routes';
+
+class App extends Component {
+  render() {
+    const App = () => (
+      <div id="main">
+        <Switch>
+          {Routes.map(route => {
+            return (
+              <Route
+                key={route.path}
+                exact
+                path={route.path}
+                component={route.component}
+              />
+            )
+          })}
+        </Switch>
+      </div>
+    )
+    return (
+    <React.Fragment> 		             {/* This allows children, and removal of unnecessary <div> wrapper */}
+      <NavigationBar />              {/* Link to Navigation Bar */}
+      <App />
+      <Footer />	                   {/* Link to Footer.js */}
     </React.Fragment>
-  );
+    );
+  }
 }
 
 export default App;
