@@ -1,4 +1,5 @@
 const express = require("express");
+var cors = require('cors');
 const path = require("path");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
@@ -16,8 +17,10 @@ const error = chalk.bold.yellow;
 const disconnected = chalk.bold.red;
 const termination = chalk.bold.magenta;
 
+
 if (process.env.NODE_ENV === "development") {
   const DB_URI = process.env.MONGO_URI_TESTS;
+  app.use(cors());
 } else {
   const DB_URI = process.env.MONGO_URI_HACKMERCED;
 }
