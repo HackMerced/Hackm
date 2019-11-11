@@ -55,6 +55,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://github.com/BusherBridi"><img src="https://avatars3.githubusercontent.com/u/44107397?v=4" width="100px;" alt="BusherBridi"/><br /><sub><b>BusherBridi</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=BusherBridi" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/trumanjchan"><img src="https://avatars2.githubusercontent.com/u/43284404?v=4" width="100px;" alt="trumanjchan"/><br /><sub><b>trumanjchan</b></sub></a><br /><a href="https://github.com/HackMerced/HackMerced-V/commits?author=trumanjchan" title="Code">💻</a></td>
   </tr>
 </table>
 
