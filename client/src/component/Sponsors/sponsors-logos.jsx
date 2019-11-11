@@ -17,7 +17,7 @@ class Sponsors extends React.Component {
         return( 
             <article className = "App-Sponsors" id= "Sponsors">
                  <div className="sponsoring"> {/*sponsoring section*/}
-                <font size = "6" color ="white" > {/* title of Sponsors*/}
+                <font size = "6" color ="#997080" > {/* title of Sponsors*/}
               <p class = "Sponsor-right"> SPONSORS </p>
                 </font>
 
