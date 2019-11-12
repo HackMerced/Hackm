@@ -1,134 +1,107 @@
-import React from "react";
+import React, { Component } from "react";
+
 import "font-awesome/css/font-awesome.min.css";
 import "./faq.css";
 
-const Faqs = () => (
-  <div className="Faqs" id="Faqs">
-    <div id="FAQ-Body">
-      <div id="FAQ-Container">
-        <h1 id="FAQ-Title">FAQ</h1>
-        <div className="question">
-          <h3>Who can attend?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            All undergraduate and graduate students of any major or high school
-            students are welcome! High school students and those under the age
-            of 18 are required to fill out a
+class Faqs extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      questions: [
+        "Who can attend?",
+        "How do teams work?",
+        "How much will it cost me?",
+        "What can I build?",
+        "What if I have no coding background?",
+        "Is there anything I should bring?",
+        "Where can I sleep on campus?",
+        "Are there any rules?"
+      ],
+      answers: [
+        "All undergraduate and graduate students of any major are welcome!",
+        "You can be in teams of up to 4 people and it is highly encouraged to find at least one other person to participate with! If you need help forming a team, we'll help set you up with others who are looking for teammates.",
+        "Admission, food and drinks are absolutely free! However, we cannot cover any travel costs.",
+        "You and your team can build a project towards a theme of your choosing!",
+        "We encourage you to attend as it will be a great experience for you to learn and compete! You will work with a team and can ask any of our volunteers for help! There will also be workshops during the event to help you learn how to code.",
+        "Bring your ID, computer, and necessary cables! If you plan on spending the night, bring extra clothes, deodorant, toiletries, and a sleeping bag (optional)! We'll have a hardware lab in case you need hardware.",
+        "In any HackMerced designated rooms! Just make sure you're comfy so you get proper rest!",
+        "All attendees must follow the Major League Hacking’s code of conduct."
+      ],
+      active: []
+    };
+  }
+
+  createQNA = () => {
+    let qna = [];
+
+    // Outer loop to create parent
+    for (let i = 0; i < this.state.questions.length; i++) {
+      qna.push(
+        <div className="accordion">
+          <div className="accordion-item">
             <a
-              href="https://risk.ucmerced.edu/sites/risk.ucmerced.edu/files/documents/waiver-voluntary.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: "#fff" }}
+              onClick={() => {
+                this.setState({ active: i });
+              }}
+              value={i}
+              className={this.state.active === "name" ? "active" : ""}
             >
-              liability waiver
+              {this.state.questions[i]}
             </a>
-            and have it sent to
-            <a
-              href="mailto:general@hackmerced.com?subject=HackMerced Questions&body=Dear HackMerced,"
-              style={{ textDecoration: "none", color: "#D7AA27" }}
+            <div
+              onClick={() => {
+                this.setState({ active: "name" });
+              }}
+              className={
+                "content" + (this.state.active === "name" ? "active" : "")
+              }
             >
-              general@hackmerced.com
-            </a>
-          </p>
+              <p>{this.state.answers[i]}</p>
+            </div>
+          </div>
         </div>
-        <div className="question">
-          <h3>How do teams work?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            You can be in teams of up to 4 people and it is highly encouraged to
-            find at least one other person to participate with! If you need help
-            forming a team, we'll help set you up with others who are looking
-            for teammates.
-          </p>
-        </div>
-        <div className="question">
-          <h3>How much will it cost me?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            Admission, food and drinks are absolutely free! However, we cannot
-            cover any travel costs.
-          </p>
-        </div>
-        <div className="question">
-          <h3>What can I build?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            You and your team can build a project towards a theme of your
-            choosing!
-          </p>
-        </div>
-        <div className="question">
-          <h3>What if I have no coding background?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            We encourage you to attend as it will be a great experience for you
-            to learn and compete! You will work with a team and can ask any of
-            our volunteers for help! There will also be workshops during the
-            event to help you learn how to code.
-          </p>
-        </div>
-        <div className="question">
-          <h3>Is there anything I should bring?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            Bring your ID, computer, and necessary cables! If you plan on
-            spending the night, bring extra clothes, deodorant, toiletries, and
-            a sleeping bag (optional)! We'll have a hardware lab in case you
-            need hardware.
-          </p>
-        </div>
-        <div className="question">
-          <h3>Where can I sleep on campus?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            In any HackMerced designated rooms! Just make sure you're comfy so
-            you get proper rest!
-          </p>
-        </div>
-        <div className="question">
-          <h3>Are there any rules?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            All attendees must follow the{" "}
-            <a
-              rel="noopener noreferrer"
-              href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf"
-              target="_blank"
-              style={{ color: "#fff" }}
-            >
-              Major League Hacking’s code of conduct
-            </a>
-            .
-          </p>
+      );
+    }
+
+    return qna;
+  };
+
+  render() {
+    const items = document.querySelectorAll(".accordion a");
+
+    function toggleAccordion() {
+      this.classList.toggle("active");
+      this.nextElementSibling.classList.toggle("active");
+    }
+
+    items.forEach(item => item.addEventListener("click", toggleAccordion));
+
+    return (
+      <div id="FAQ">
+        <div className="container" id="FAQ-Container">
+          <h2 id="FAQ-Title">Frequently Asked Questions</h2>
+          {this.createQNA()}
+          <div className="prompt">
+            <div className="question">
+              <h3>Any other questions?</h3>
+            </div>
+            <div className="answer">
+              <p>
+                Feel free to message us at: 
+                <a
+                  href="mailto:general@hackmerced.com?subject=HackMerced Questions&body=Dear HackMerced,"
+                  style={{ textDecoration: "none", color: "#A8B6D6", fontWeight: 'bold'}}
+                >
+                  general@hackmerced.com
+                </a>
+                .
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="prompt">
-        <div className="question">
-          <h3>Any other questions?</h3>
-        </div>
-        <div className="answer">
-          <p>
-            Feel free to message us at:{" "}
-            <a
-              href="mailto:general@hackmerced.com?subject=HackMerced Questions&body=Dear HackMerced,"
-              style={{ textDecoration: "none", color: "#D7AA27" }}
-            >
-              general@hackmerced.com
-            </a>
-            .
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+    );
+  }
+}
 
 export default Faqs;
