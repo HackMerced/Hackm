@@ -1,5 +1,4 @@
 import React from "react";
-import Mailing from "../Mailing-List";
 
 import "./Title.css";
 import polaroid from "../../assets/images/polaroid.png";
@@ -12,10 +11,15 @@ class Title extends React.Component {
           {/* Headers */}
           <h2>HACK'M</h2>
           <h4>December 7, 2019</h4>
-          <Mailing />
+          <div id="js-show-modal" class="launch-button">
+            <a href="https://localhackday.mlh.io/build/locations/2418">
+              Sign Up Here
+              <div class="launch-button__glare"></div>
+            </a>
+          </div>
           {/* popup button trigger */}
         </section>
-        <img className="title-image" src={polaroid} alt="Italian Trulli"></img>
+        <img id="title-image" src={polaroid} alt="Italian Trulli"></img>
       </article>
     );
   }

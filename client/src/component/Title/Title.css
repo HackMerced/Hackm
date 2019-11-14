@@ -29,11 +29,16 @@
   float: left;
 }
 
-.title-image {
+#title-image {
   position: absolute;
   right: 5%;
   width: 40%;
   float: right;
+}
+
+#title-image:hover {
+  transform: scale(1.1);
+  transition: all 0.5s linear;
 }
 
 .title-title h2 {
@@ -46,4 +51,61 @@
   font-size: 20px;
   margin-block-start: 0px;
   letter-spacing: 5px;
+}
+
+.launch-button {
+  font-size: 16px;
+  color: #fff;
+  background-color: #997080;
+  text-align: center;
+  width: 13.75rem;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.125rem;
+  position: absolute;
+  overflow: hidden;
+  display: block;
+  text-transform: uppercase;
+}
+
+.launch-button > a {
+  text-decoration: none;
+  color: white;
+}
+
+.launch-button:hover {
+  cursor: pointer;
+}
+
+.launch-button:hover .launch-button__glare {
+  right: -35%;
+  transition: all 0.4s linear;
+}
+
+.launch-button:active {
+  opacity: 0.95;
+}
+
+.launch-button__glare {
+  position: absolute;
+  width: 45px;
+  height: 200%;
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  background-color: rgba(255, 255, 255, 0.5);
+  top: -50%;
+  right: 120%;
+}
+
+.launch-button__glare:after {
+  content: "";
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  background: inherit;
+  right: -15px;
+  top: 0;
 }
