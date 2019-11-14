@@ -194,7 +194,7 @@ class NeonHeart extends React.Component {
       gl.shaderSource(shader, shaderSource);
       gl.compileShader(shader);
       if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-        throw "Shader compile failed with: " + gl.getShaderInfoLog(shader);
+        throw Object.assign("Shader compile failed with: " + gl.getShaderInfoLog(shader));
       }
       return shader;
     }
@@ -204,7 +204,7 @@ class NeonHeart extends React.Component {
     function getAttribLocation(program, name) {
       var attributeLocation = gl.getAttribLocation(program, name);
       if (attributeLocation === -1) {
-        throw "Cannot find attribute " + name + ".";
+        throw Object.assign("Cannot find attribute " + name + ".");
       }
       return attributeLocation;
     }
@@ -212,7 +212,7 @@ class NeonHeart extends React.Component {
     function getUniformLocation(program, name) {
       var attributeLocation = gl.getUniformLocation(program, name);
       if (attributeLocation === -1) {
-        throw "Cannot find uniform " + name + ".";
+        throw Object.assign("Cannot find uniform " + name + ".");
       }
       return attributeLocation;
     }

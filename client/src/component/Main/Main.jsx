@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom"; //Switch and Route Library
-import Routes from "../../routes/appRoute.jsx";
+import Routes from "../../routes/index.jsx/index.js";
 
 class Main extends React.Component {
   render() {

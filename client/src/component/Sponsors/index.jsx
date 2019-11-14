@@ -1,16 +1,16 @@
 import React from "react";
-import "./sponsors-logos.css";
+
+import "./sponsors.css";
 import ASUCM from "../../assets/images/asucm_logo.png";
-import password from "../../assets/images/1password.png";
-import DigitalOcean from "../../assets/images/DigitalOcean_logo.svg.png";
-import sketch from "../../assets/images/Sketch.png";
-import roche from "../../assets/images/Roche_Logo.svg";
-import balsamiq from "../../assets/images/balsamiq-logo-noborder-print.png";
-import stickeryou from "../../assets/images/stickeryou_logo.png";
-import jetbrains from "../../assets/images/jetbrains.png";
-import makeschool from "../../assets/images/makeschool_logo.png";
-import mlh from "../../assets/images/mlh-logo-color.png";
-//inserted images by moving from file to file
+import PASSWORD from "../../assets/images/1password.png";
+import DIGITALOCEAN from "../../assets/images/DigitalOcean_logo.svg.png";
+import SKETCH from "../../assets/images/Sketch.png";
+import ROCHE from "../../assets/images/Roche_Logo.svg";
+import BALSAMIQ from "../../assets/images/balsamiq-logo-noborder-print.png";
+import STICKERYOU from "../../assets/images/stickeryou_logo.png";
+import JETBRAINS from "../../assets/images/jetbrains.png";
+import MAKESCHOOL from "../../assets/images/makeschool_logo.png";
+import MLH from "../../assets/images/mlh-logo-color.png";
 
 class Sponsors extends React.Component {
   render() {
@@ -20,55 +20,49 @@ class Sponsors extends React.Component {
           {/*sponsoring section*/}
           <font size="6" color="#997080">
             {/* title of Sponsors*/}
-            <p class="Sponsor-right"> SPONSORS </p>
+            <p class="Sponsor-right">SPONSORS</p>
           </font>
           <br></br>
           <div className="Sponsor-row">
             {/*made a row for the display*/}
             <div className="column">
-              {" "}
               {/*named it column instead of top*/}
               <a href="https://asucm.ucmerced.edu/">
-                {" "}
                 {/*goes to ASUCM site*/}
-                <img className="asucm" src={ASUCM} alt="ASUCM" />{" "}
+                <img className="asucm" src={ASUCM} alt="ASUCM" />
                 {/*ASUCM logo and link*/}
               </a>
             </div>
             <div className="Sponsor-top">
               <a href="https://digitalocean.com/">
-                {" "}
                 {/*goes to digital ocean site*/}
                 <img
                   className="digitalocean"
-                  src={DigitalOcean}
+                  src={DIGITALOCEAN}
                   alt="Digital Ocean"
-                />{" "}
+                />
                 {/*Digital Ocean logo and link*/}
               </a>
             </div>
             <div className="Sponsor-top">
               <a href="https://roche.com/">
-                {" "}
                 {/*goes to roche site*/}
-                <img className="roche" src={roche} alt="Roche" />{" "}
+                <img className="roche" src={ROCHE} alt="Roche" />
                 {/*Roche logo and link*/}
               </a>
             </div>
           </div>
           <div className="Sponsor-2row">
-            {" "}
             {/*bottom row for the display*/}
             <div className="Sponsor-middle">
               <div className="password">
                 <a href="https://1password.com/">
-                  {" "}
                   {/*goes to 1 password site*/}
                   <img
                     className="password"
-                    src={password}
+                    src={PASSWORD}
                     alt="1Password"
-                  />{" "}
+                  />
                   {/*1 paswword logo and link*/}
                 </a>
               </div>
@@ -77,7 +71,7 @@ class Sponsors extends React.Component {
                 <a href="https://www.makeschool.com/">
                   <img
                     className="makeschool"
-                    src={makeschool}
+                    src={MAKESCHOOL}
                     alt="Make School"
                   />
                 </a>
@@ -86,7 +80,7 @@ class Sponsors extends React.Component {
                 <a href="https://www.stickeryou.com/">
                   <img
                     className="stickeryou"
-                    src={stickeryou}
+                    src={STICKERYOU}
                     alt="Sticker You"
                   />
                 </a>
@@ -95,28 +89,27 @@ class Sponsors extends React.Component {
             <div className="Sponsor-3row">
               <div className="Sponsor-bottom">
                 <a href="https://www.sketch.com/">
-                  {" "}
                   {/*goes to sketch site*/}
-                  <img className="sketch" src={sketch} alt="Sketch" />{" "}
+                  <img className="sketch" src={SKETCH} alt="Sketch" />
                   {/*Sketch logo and link*/}
                 </a>
               </div>
 
               <div className="Sponsor-bottom">
                 <a href="https://balsamiq.com/">
-                  <img className="balsamiq" src={balsamiq} alt="Balsamiq" />
+                  <img className="balsamiq" src={BALSAMIQ} alt="Balsamiq" />
                 </a>
               </div>
 
               <div className="Sponsor-bottom">
                 <a href="https://www.jetbrains.com/">
-                  <img className="jetbrains" src={jetbrains} alt="Jetbrains" />
+                  <img className="jetbrains" src={JETBRAINS} alt="Jetbrains" />
                 </a>
               </div>
             </div>
             <div className="Sponsor-mlh">
               <a href="https://mlh.io/">
-                <img className="mlh" src={mlh} alt="Major League Hacking" />
+                <img className="mlh" src={MLH} alt="Major League Hacking" />
               </a>
             </div>
           </div>
