@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./Title.css";
-import polaroid from "../../assets/images/polaroid.png";
+import polaroid from "../../assets/Images/polaroid.png";
 
 class Title extends React.Component {
   render() {

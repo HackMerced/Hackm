@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 
-import "font-awesome/css/font-awesome.min.css";
 import "./mailing-list.css";
 
 class PopUp extends React.Component {
