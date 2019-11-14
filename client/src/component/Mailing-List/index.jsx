@@ -75,7 +75,7 @@ class PopUp extends React.Component {
                   Thank you {capitalize_Words(this.state.name)} for joining
                   HackMerced's mailing list
                 </h2>
-                <a className="close" href="#">
+                <a className="close">
                   &times;
                 </a>
               </div>

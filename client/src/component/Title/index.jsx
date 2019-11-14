@@ -12,10 +12,10 @@ class Title extends React.Component {
           {/* Headers */}
           <h2>HACK'M</h2>
           <h4>December 7, 2019</h4>
+          <Mailing />
           {/* popup button trigger */}
         </section>
         <img className="title-image" src={polaroid} alt="Italian Trulli"></img>
-        <Mailing />
       </article>
     );
   }
