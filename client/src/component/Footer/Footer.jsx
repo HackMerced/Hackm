@@ -1,5 +1,4 @@
 import React from 'react';
-import 'font-awesome/css/font-awesome.min.css'
 import './footer.css'
 
 const Footer = () => {
