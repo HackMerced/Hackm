@@ -16,17 +16,16 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-
 }
 
-.fa{
-    /* font-awesome icon styling */
-    color: white;
-    font-size: 35px !important;
-    margin: 10px;
+.fa {
+  /* font-awesome icon styling */
+  color: white;
+  font-size: 35px !important;
+  margin: 10px;
 }
 
-.credits{
+.credits {
   /* copyright styling */
   font-size: 15px;
 }

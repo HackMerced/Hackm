@@ -1,6 +1,6 @@
 .fa{
     /* font-awesome icon styling */
-    color: white;
+    color: #B996A4;
     font-size: 35px !important;
     margin: 10px;
 }
@@ -15,8 +15,8 @@
 
 .App-footer {
     /* entire footer styling */
-    color: white;
-    background-color: #2a2834;
+    color: #B996A4;
+    background-color: #E7D9D2; /* This adjusts the container */
     min-height: 10vh;
     display: flex;
     flex-direction: column;
