@@ -63,7 +63,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Hind", sans-serif;
   background: #fff;
   color: #4d5974;
   display: -webkit-box;
@@ -120,7 +119,6 @@ h3 {
 }
 
 .accordion a::after {
-  font-family: "Ionicons";
   content: "\f218";
   position: absolute;
   float: right;
@@ -138,7 +136,6 @@ h3 {
 }
 
 .accordion a.active::after {
-  font-family: "Ionicons";
   content: "\f209";
   color: #A8B6D6;
   border: 1px solid #A8B6D6;
