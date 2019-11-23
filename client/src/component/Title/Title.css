@@ -13,7 +13,7 @@
 
 .title-title {
   position: relative;
-  width: 750px;
+  width: 80%;
   background: linear-gradient(
     180deg,
     rgba(168, 182, 214, 1) 43%,
@@ -21,7 +21,7 @@
     rgba(231, 217, 210, 1) 100%
   );
   padding-top: 1vh;
-  padding-left: 10px;
+  padding-left: 2%;
   color: white;
   font-size: 30px;
   height: 100vh;

@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import './footer.css'
 
 const Footer = () => {
@@ -10,7 +12,7 @@ const Footer = () => {
 			  		<i className="fa fa-envelope"></i> {/* email icon */}
 			  	</a>
 			  	<a href="https://www.facebook.com/hackmerced/" target="_blank" rel="noopener noreferrer" style={{ color: '#0000' }}> {/* goes to HackMerced fb */}
-			  		<i className="fa fa-facebook-square"></i> {/* fb icon */}
+						<FontAwesomeIcon icon="facebook-square" /> {/* fb icon */}
 			  	</a>
 			  	<a href="https://www.instagram.com/hackmerced/" style={{ color: '#0000' }}> {/* goes to HackMerced IG*/}
 			  		<i className="fa fa-instagram"></i> {/* instagram icon */}
