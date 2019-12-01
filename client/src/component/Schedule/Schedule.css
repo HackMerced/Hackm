@@ -1,4 +1,4 @@
-#Schedule-Background {
+#Schedule {
   background-image: linear-gradient(rgb(231, 217, 210) 0%, rgb(168, 182, 214) 60%, rgb(231, 217, 210));
 }
 
@@ -20,10 +20,6 @@
   padding-top: 135px;
   padding-bottom: 19px;
   text-align: center;
-}
-
-#Schedule-Container {
-
 }
 
 .timeline {
@@ -293,9 +289,16 @@
   }
 }
 
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media screen and (min-width: 400px) and (max-width: 660px) {
   .direction-l .desc,
   .direction-r .desc {
     margin: 1em 4em 0 4em;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #Schedule-Title {
+    padding-left: 50px;
   }
 }

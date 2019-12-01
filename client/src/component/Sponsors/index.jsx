@@ -20,7 +20,7 @@ class Sponsors extends React.Component {
           {/*sponsoring section*/}
           <font size="6" color="#997080">
             {/* title of Sponsors*/}
-            <p class="Sponsor-right">SPONSORS</p>
+            <p className="Sponsor-right">SPONSORS</p>
           </font>
           <br></br>
           <div className="Sponsor-row">

@@ -176,9 +176,9 @@
   }
 
   .stickeryou {
-    bottom: 325px;
+    bottom: 160px;
     position: relative;
-    left: 200px;
+    left: 170px;
     max-width: 325%;
     width: 300px;
     height: 125px;
@@ -188,7 +188,7 @@
     bottom: 30px;
     position: relative;
     left: 175px;
-    width: 480%;
+    width: 680%;
     max-width: 500px;
     height: 150px;
   }
@@ -215,7 +215,7 @@
   .jetbrains {
     bottom: 100px;
     position: relative;
-    right: 100px;
+    left: 40px;
     width: 100%;
     max-width: 125px;
     height: 125px;

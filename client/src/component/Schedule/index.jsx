@@ -4,7 +4,7 @@ import "./Schedule.css";
 class Schedule extends React.Component {
   render() {
     return (
-      <div id="Schedule-Background">
+      <div id="Schedule">
         <div id="Schedule-Body">
           <div id="Schedule-Title">Schedule</div>
           <div id="Schedule-Container">

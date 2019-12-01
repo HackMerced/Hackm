@@ -30,3 +30,10 @@
 .AboutUs-goal p {
   font-size: 1.15rem;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .App-AboutUs {
+    margin: 80px 25px 80px 25px;
+  }
+}
