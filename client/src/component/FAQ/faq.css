@@ -101,6 +101,7 @@ h3 {
   font-size: 1.15rem;
   font-weight: 400;
   border-bottom: 1px solid #e5e5e5;
+  text-decoration: none;
 }
 
 .accordion a:hover,

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Switch, Route } from "react-router-dom"; //Switch and Route Library
 
-import Footer from './component//Footer/Footer.jsx';
-import NavigationBar from './component/Header/NavigationBar.jsx'
+import Footer from './component/Footer';
+import NavigationBar from './component/Header'
 import Routes from './routes';
 
 class App extends Component {
