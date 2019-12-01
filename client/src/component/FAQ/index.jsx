@@ -91,7 +91,7 @@ class Faqs extends Component {
                   href="mailto:general@hackmerced.com?subject=HackMerced Questions&body=Dear HackMerced,"
                   style={{ textDecoration: "none", color: "#A8B6D6", fontWeight: 'bold'}}
                 >
-                  general@hackmerced.com
+                  {" "}general@hackmerced.com
                 </a>
                 .
               </p>

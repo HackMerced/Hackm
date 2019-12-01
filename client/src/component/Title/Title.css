@@ -1,6 +1,6 @@
 .App-title {
   background-color: #e7d9d2;
-  height: 125vh;
+  height: 900px;
   width: 100%;
   background-attachment: fixed;
   padding-left: 130px;
@@ -24,7 +24,7 @@
   padding-left: 2%;
   color: white;
   font-size: 30px;
-  height: 100vh;
+  height: 800px;
   float: left;
 }
 
@@ -107,4 +107,21 @@
   background: inherit;
   right: -15px;
   top: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .App-title {
+    height: 750px;
+    padding-left: 40px;
+  }
+  
+  .title-title {
+    width: 90%;
+    height: 650px;
+  }
+  
+  #title-image {
+    display: none;
+  }
 }

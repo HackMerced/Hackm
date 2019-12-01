@@ -23,7 +23,7 @@ class NavigationBar extends React.Component {
                         <a className= "style-link" href='/#about-us' title= "About Us!">About Us</a> {/* RR link to About Us section of home page */}
                     </nav>
                     <nav className = "nav-link">  
-                        <a className= "style-link" href='/#Sponsors' title= "Our Sponsors <3">Sponsors</a> {/* RR link to sponsers section of home page */}
+                        <a className= "style-link" href='#Sponsors' title= "Our Sponsors <3">Sponsors</a> {/* RR link to sponsers section of home page */}
                     </nav>
                     {/*
                     <nav className = "nav-link">  
