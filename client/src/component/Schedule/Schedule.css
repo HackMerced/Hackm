@@ -1,4 +1,4 @@
-#Schedule-Background {
+#Schedule {
   background-image: linear-gradient(rgb(231, 217, 210) 0%, rgb(168, 182, 214) 60%, rgb(231, 217, 210));
 }
 
@@ -20,10 +20,6 @@
   padding-top: 135px;
   padding-bottom: 19px;
   text-align: center;
-}
-
-#Schedule-Container {
-
 }
 
 .timeline {

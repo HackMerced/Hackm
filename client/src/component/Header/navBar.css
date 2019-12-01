@@ -20,3 +20,10 @@
   font-weight: bold;
   text-decoration: none; /* removes underscores of the links */
 }
+
+#navbar {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+}

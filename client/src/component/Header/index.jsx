@@ -8,22 +8,22 @@ import Banner from './MLH-Banner/Banner.jsx'
 class NavigationBar extends React.Component {
     render() {
         return(
-            <article>
+            <article id="navbar">
                 <section>
                     <Banner /> {/* Link to Banner */}
                 </section>
                 <section className="App-nav" id="Navigation-Bar">
                     <nav className = "nav-link">
-                        <a className= "style-link" href="/#schedule" title= "HackMerced Schedule">Schedule</a> {/* RR link to Our Hackathon Schedule of home page */}
+                        <a className= "style-link" href="/#Schedule" title= "HackMerced Schedule">Schedule</a> {/* RR link to Our Hackathon Schedule of home page */}
                     </nav>
                     <nav className = "nav-link">
-                        <a className= "style-link" href='/#faq' title= "Frequently Asked Questions">FAQ</a> {/* RR link to FAQ of home page */}
+                        <a className= "style-link" href='/#FAQ' title= "Frequently Asked Questions">FAQ</a> {/* RR link to FAQ of home page */}
                     </nav>
                     <nav className = "nav-link">  
                         <a className= "style-link" href='/#about-us' title= "About Us!">About Us</a> {/* RR link to About Us section of home page */}
                     </nav>
                     <nav className = "nav-link">  
-                        <a className= "style-link" href='/#sponsors' title= "Our Sponsors <3">Sponsors</a> {/* RR link to sponsers section of home page */}
+                        <a className= "style-link" href='/#Sponsors' title= "Our Sponsors <3">Sponsors</a> {/* RR link to sponsers section of home page */}
                     </nav>
                     {/*
                     <nav className = "nav-link">  
