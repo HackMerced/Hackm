@@ -167,3 +167,10 @@ h3 {
   -o-transition: all 0.35s ease 0.15s;
   transition: all 0.35s ease 0.15s;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #FAQ-Title {
+    padding: 35px 0 39px 10px;
+  }
+}
