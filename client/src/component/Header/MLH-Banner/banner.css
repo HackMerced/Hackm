@@ -1,8 +1,59 @@
-.App-banner{
-    /*Adjusting position of the banner to the top left corner*/
-    width:8.5%;
-    position: absolute;
-    top: -5px;
-    padding-left: 20px;
-    
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .App-banner{
+        /*Adjusting position of the banner to the top left corner*/
+        width: 130px;
+        position: absolute;
+        top: -5px;
+        padding-left: 20px;
+        z-index: 100;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .App-banner{
+        /*Adjusting position of the banner to the top left corner*/
+        width: 130px;
+        position: absolute;
+        top: -5px;
+        padding-left: 20px;
+        z-index: 100;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .App-banner{
+        /*Adjusting position of the banner to the top left corner*/
+        width: 130px;
+        position: absolute;
+        top: -5px;
+        padding-left: 20px;
+        z-index: 100;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .App-banner{
+        /*Adjusting position of the banner to the top left corner*/
+        width: 150px;
+        position: absolute;
+        top: -5px;
+        padding-left: 20px;
+        z-index: 100;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .App-banner{
+        /*Adjusting position of the banner to the top left corner*/
+        width: 150px;
+        position: absolute;
+        top: -5px;
+        padding-left: 20px;
+        z-index: 100;
+    }
 }

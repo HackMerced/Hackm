@@ -11,10 +11,10 @@ class Title extends React.Component {
           {/* Headers */}
           <h2>HACK'M</h2>
           <h4>December 7, 2019</h4>
-          <div id="js-show-modal" class="launch-button">
+          <div id="js-show-modal" className="launch-button">
             <a href="https://localhackday.mlh.io/build/locations/2418">
               Sign Up Here
-              <div class="launch-button__glare"></div>
+              <div className="launch-button__glare"></div>
             </a>
           </div>
           {/* popup button trigger */}
