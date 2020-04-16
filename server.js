@@ -1,5 +1,5 @@
 const express = require("express");
-var cors = require('cors');
+var cors = require("cors");
 const path = require("path");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
@@ -16,7 +16,6 @@ const connected = chalk.bold.cyan;
 const error = chalk.bold.yellow;
 const disconnected = chalk.bold.red;
 const termination = chalk.bold.magenta;
-
 
 if (process.env.NODE_ENV === "development") {
   const DB_URI = process.env.MONGO_URI_TESTS;
@@ -43,23 +42,28 @@ app.use(
 app.use(express.static(path.join(__dirname, "/client/build/")));
 
 // Connect to MongoDB then open port on defined port in .env
-mongoose.connection.on("connected", function() {
-  console.log(connected("Mongoose default connection is open to", /(?=hack)(.*?)(?=\s*\?)/.exec(DB_URI)[0]));
+mongoose.connection.on("connected", function () {
+  console.log(
+    connected(
+      "Mongoose default connection is open to",
+      /(?=hack)(.*?)(?=\s*\?)/.exec(DB_URI)[0]
+    )
+  );
 });
 
 db().then(async () => {
-  mongoose.connection.on("error", function(err) {
+  mongoose.connection.on("error", function (err) {
     console.log(
       error("Mongoose default connection has occured " + err + " error")
     );
   });
 
-  mongoose.connection.on("disconnected", function() {
+  mongoose.connection.on("disconnected", function () {
     console.log(disconnected("Mongoose default connection is disconnected"));
   });
 
-  process.on("SIGINT", function() {
-    mongoose.connection.close(function() {
+  process.on("SIGINT", function () {
+    mongoose.connection.close(function () {
       console.log(
         termination(
           "Mongoose default connection is disconnected due to application termination"
@@ -69,7 +73,9 @@ db().then(async () => {
     });
   });
 
-  app.listen(process.env.PORT, () =>
-    console.log(chalk.bold.white(`Example app listening on port ${process.env.PORT}!`))
+  app.listen(process.env.PORT || 3852, () =>
+    console.log(
+      chalk.bold.white(`Example app listening on port ${process.env.PORT}!`)
+    )
   );
 });
