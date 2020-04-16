@@ -34,5 +34,10 @@
   "devDependencies": {
     "mocha": "^6.1.4",
     "nodemon": "^1.19.1"
+  },
+  "engines": {
+    "node": "12.16.x",
+    "npm": "6.x",
+    "yarn": "1.x"
   }
 }
