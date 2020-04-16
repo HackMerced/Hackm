@@ -73,9 +73,9 @@ db().then(async () => {
     });
   });
 
-  app.listen(process.env.PORT, () =>
+  app.listen(process.env.PORT || 3852, process.env.HOST || '0.0.0.0', () =>
     console.log(
-      chalk.bold.white(`Example app listening on port ${process.env.PORT}!`)
+      chalk.bold.white(`Hackm listening on port ${process.env.PORT}!`)
     )
   );
 });
