@@ -32,7 +32,7 @@ class PopUp extends React.Component {
       event.preventDefault();
       axios({
         method: "post",
-        url: "http://localhost:3852/api/mailing",
+        url: "https://hackmerced-hackm.herokuapp.com/api/mailing",
         data: {
           name: this.state.name,
           email: this.state.email

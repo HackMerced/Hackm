@@ -73,7 +73,7 @@ db().then(async () => {
     });
   });
 
-  app.listen(process.env.PORT || 3852, process.env.HOST, () =>
+  app.listen(process.env.PORT, () =>
     console.log(
       chalk.bold.white(`Example app listening on port ${process.env.PORT}!`)
     )
