@@ -5,18 +5,19 @@
   "author": "HackMerced",
   "main": "server.js",
   "scripts": {
-    "test": "mocha",
     "clean": "concurrently \"yarn clean:client\" \"yarn clean:server\"",
     "clean:client": "cd client && rm -rf ./node_modules yarn.lock",
     "clean:server": "rm -rf ./node_modules yarn.lock",
-    "setup": "yarn install:server && yarn install:client",
+    "dev": "concurrently \"yarn start:client\" \"yarn dev:server\"",
+    "dev:server": "nodemon server.js",
+    "gren": "gren release --override --tags=all --config=.grenrc.js",
     "install:client": "cd client && yarn install",
     "install:server": "yarn install",
+    "setup": "yarn install:server && yarn install:client",
     "start": "concurrently \"yarn start:client\" \"yarn start:server\"",
-    "dev": "concurrently \"yarn start:client\" \"yarn dev:server\"",
     "start:client": "cd client && yarn build",
     "start:server": "node server.js",
-    "dev:server": "nodemon server.js"
+    "test": "mocha"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
