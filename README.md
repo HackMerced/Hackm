@@ -4,7 +4,7 @@
 </p>
 
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
-[![CircleCI](https://circleci.com/gh/HackMerced/HackMerced-V.svg?style=svg)](https://circleci.com/gh/HackMerced/HackMerced-V)
+![Release](https://github.com/HackMerced/Hackm/workflows/Release/badge.svg)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2901/badge)](https://bestpractices.coreinfrastructure.org/projects/2901)
 ![GitHub issues](https://img.shields.io/github/issues-raw/HackMerced/HackMerced-V.svg?style=plastic)
 ![GitHub](https://img.shields.io/github/license/HackMerced/HackMerced-V.svg?style=plastic)
