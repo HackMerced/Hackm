@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master # Successful Merge on master branch
+
+jobs:
+  release:
+    name: Update Release notes and Changelog
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+        os: [ubuntu-latest]
+
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - name: Configure Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Dependencies
+        run: |
+          echo 'Running Setup...'
+          yarn install
+          npm install -g github-release-notes
+
+      - name: Update Release notes
+        run: |
+          echo 'Update Release Notes...'
+          npm run gren -- --token=${{ secrets.GREN_GITHUB_TOKEN }}
