@@ -14,6 +14,8 @@
     "install:client": "cd client && yarn install",
     "install:server": "yarn install",
     "setup": "npm run install:server && npm run install:client",
+    "setup:heroku": "npm install && cd client && npm install",
+    "prestart": "npm run setup:heroku",
     "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
     "start:client": "cd client && npm run build",
     "start:server": "node server.js",

@@ -8,6 +8,18 @@
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -21,19 +33,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-modal": "^3.11.1",
-    "react-router-dom": "^5.0.1",
-    "react-scripts": "3.0.1"
+    "react-router-dom": "^5.0.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "react-scripts": "^3.4.1"
   }
 }
